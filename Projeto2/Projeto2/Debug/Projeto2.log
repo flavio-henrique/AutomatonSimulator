@@ -1,0 +1,23 @@
+﻿Build started 24/09/2016 11:20:59.
+     1>Project "D:\Projeto2\Projeto2\Projeto2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Controle.cpp Opcao1Form.cpp Principal.cpp
+         Controle.cpp
+         Opcao1Form.cpp
+         Principal.cpp
+         Gerando Código...
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projeto2\Debug\Projeto2.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Projeto2.MenuForm.resources /ASSEMBLYRESOURCE:Debug\Projeto2.Opcao1Form.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projeto2\Debug\Projeto2.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\Automato.obj
+         Debug\Controle.obj
+         Debug\MenuForm.obj
+         Debug\Opcao1Form.obj
+         Debug\Opcao2Form.obj
+         Debug\Opcao3Form.obj
+         Debug\Principal.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         Projeto2.vcxproj -> D:\Projeto2\Debug\Projeto2.exe
+     1>Done Building Project "D:\Projeto2\Projeto2\Projeto2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.26

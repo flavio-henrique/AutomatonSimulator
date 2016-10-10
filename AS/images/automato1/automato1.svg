@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="208.5" cy="206.5" rx="30" ry="30"/>
+	<text x="196.5" y="212.5" font-family="Times New Roman" font-size="20">Q1</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="375.5" cy="94.5" rx="30" ry="30"/>
+	<text x="363.5" y="100.5" font-family="Times New Roman" font-size="20">Q2</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="544.5" cy="222.5" rx="30" ry="30"/>
+	<text x="532.5" y="228.5" font-family="Times New Roman" font-size="20">Q3</text>
+	<ellipse stroke="black" stroke-width="1" fill="none" cx="544.5" cy="222.5" rx="24" ry="24"/>
+	<path stroke="black" stroke-width="1" fill="none" d="M 222.341,179.922 A 182.927,182.927 0 0 1 345.657,97.219"/>
+	<polygon fill="black" stroke-width="1" points="345.657,97.219 336.916,93.669 338.636,103.52"/>
+	<text x="261.5" y="116.5" font-family="Times New Roman" font-size="20">a</text>
+	<path stroke="black" stroke-width="1" fill="none" d="M 516.073,212.955 A 288.475,288.475 0 0 1 392.39,119.278"/>
+	<polygon fill="black" stroke-width="1" points="516.073,212.955 510.468,205.367 506.796,214.669"/>
+	<text x="432.5" y="195.5" font-family="Times New Roman" font-size="20">b</text>
+	<path stroke="black" stroke-width="1" fill="none" d="M 404.439,102.336 A 246.44,246.44 0 0 1 529.116,196.766"/>
+	<polygon fill="black" stroke-width="1" points="404.439,102.336 410.422,109.631 413.618,100.156"/>
+	<text x="479.5" y="130.5" font-family="Times New Roman" font-size="20">b</text>
+	<path stroke="black" stroke-width="1" fill="none" d="M 354.936,116.333 A 386.124,386.124 0 0 1 236.504,195.761"/>
+	<polygon fill="black" stroke-width="1" points="236.504,195.761 245.827,197.204 241.886,188.013"/>
+	<text x="304.5" y="182.5" font-family="Times New Roman" font-size="20">a</text>
+</svg>

@@ -11,7 +11,7 @@ Controle::~Controle(){
 void Controle::controlarExecucao(void){
 	AS::MenuAS menu;
 	AS::FormListaAutomato listaAutomato;
-	AS::TesteAutomatoForm teste;
+	
 	Automato automato;
 
 	bool Resultado;
@@ -26,21 +26,10 @@ void Controle::controlarExecucao(void){
 				switch (listaAutomato.getStatus())
 				{
 				case 1:
+					AS::TesteAutomatoForm teste(1);
 					while (teste.getStatus() != 0){
+						teste.setStatus(1);
 						teste.ShowDialog();
-
-						switch (teste.getStatus())
-						{
-						case 1:
-							Resultado = automato.testeAutomato1(teste.getPalavra());
-							if (Resultado){
-								teste.setLabel("Aceita");
-							}
-							else{
-								teste.setLabel("Rejeita");
-							}
-							break;	
-						}
 					}
 					teste.setStatus(-1);
 					break;

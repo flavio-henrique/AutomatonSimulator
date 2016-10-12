@@ -21,15 +21,20 @@ namespace AS {
 	public ref class TesteAutomatoForm : public System::Windows::Forms::Form
 	{
 	public:
-		TesteAutomatoForm(void)
+		TesteAutomatoForm(int op)
 		{
 			InitializeComponent();
 			//
 			//TODO: Add the constructor code here
 			//
+			
+			setAF(op);
 			Status = -1;
 			Imagem = 1;
+
 		}
+
+		//ponteiro af;
 		int getStatus();
 		void setStatus(int);
 		string getPalavra();
@@ -37,9 +42,9 @@ namespace AS {
 		void setProxEstado(bool);
 		bool getProxEstado();
 		void setImagemEstado(string);
-
-
-		bool testarAF();
+		bool testeAutomato1(string);
+		void setAF(int);
+		void sleepcp(int milliseconds); // cross-platform sleep function
 		void MarshalString(String ^ s, string& os) {
 			using namespace Runtime::InteropServices;
 			const char* chars = (const char*)(Marshal::StringToHGlobalAnsi(s)).ToPointer();
@@ -66,6 +71,11 @@ namespace AS {
 		/// Required designer variable.
 		/// </summary>
 		int Imagem;
+		int Status;
+		bool proxEstado = false;
+		ponteiro af;
+		int I = 0;
+		
 
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::Label^  label1;
@@ -76,11 +86,7 @@ namespace AS {
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Button^  button3;
 
-			 int Status;
-
-
-
-			 bool proxEstado = false;
+			 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -213,14 +219,7 @@ namespace AS {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 if (testarAF()){
-					 setLabel("Aceita");
-				 }else{
-					 setLabel("Rejeita");
-				 }
-				 
-				 //Status = 1;
-				 //this->Visible = false;
+				 setImagemEstado(af->imagem);
 	}
 	private: System::Void TesteAutomatoForm_FormClosed(System::Object^  sender, System::Windows::Forms::FormClosedEventArgs^  e) {
 				 Status = 0;
@@ -230,7 +229,28 @@ private: System::Void TesteAutomatoForm_Load(System::Object^  sender, System::Ev
 		
 }
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
-			 proxEstado = true;
+			 string palavra = getPalavra();
+			 int tamanho = palavra.size();
+			 bool rejeita = true;
+
+
+			 for (int j = 0; j < 10; j++){
+				 if (af->transicoes[j].simboloAceito == palavra[I]){
+
+					 af = af->transicoes[j].link;
+					 I++;
+					 setImagemEstado(af->imagem);
+					 rejeita = false;
+					 break;
+				 }
+			 }
+			 if (rejeita){
+				 setLabel("Rejeita");
+			 }
+			 if (af->isFinal == true && palavra.size() == I){
+				 setLabel("Aceita");
+			 }
+
 }
 
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {

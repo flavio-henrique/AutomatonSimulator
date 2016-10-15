@@ -112,12 +112,11 @@ namespace AS {
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(81)), static_cast<System::Int32>(static_cast<System::Byte>(161)),
-				static_cast<System::Int32>(static_cast<System::Byte>(243)));
+			this->button1->BackColor = System::Drawing::Color::SpringGreen;
 			this->button1->FlatAppearance->BorderSize = 0;
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Gudea", 14));
-			this->button1->ForeColor = System::Drawing::Color::White;
+			this->button1->ForeColor = System::Drawing::Color::Black;
 			this->button1->Location = System::Drawing::Point(541, 183);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(301, 37);
@@ -185,13 +184,12 @@ namespace AS {
 			// 
 			// button2
 			// 
-			this->button2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(81)), static_cast<System::Int32>(static_cast<System::Byte>(161)),
-				static_cast<System::Int32>(static_cast<System::Byte>(243)));
+			this->button2->BackColor = System::Drawing::Color::SpringGreen;
 			this->button2->FlatAppearance->BorderSize = 0;
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Gudea", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->ForeColor = System::Drawing::Color::White;
+			this->button2->ForeColor = System::Drawing::Color::Black;
 			this->button2->Location = System::Drawing::Point(158, 361);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(99, 45);
@@ -202,13 +200,12 @@ namespace AS {
 			// 
 			// button3
 			// 
-			this->button3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(81)), static_cast<System::Int32>(static_cast<System::Byte>(161)),
-				static_cast<System::Int32>(static_cast<System::Byte>(243)));
+			this->button3->BackColor = System::Drawing::Color::SpringGreen;
 			this->button3->FlatAppearance->BorderSize = 0;
 			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Gudea", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button3->ForeColor = System::Drawing::Color::White;
+			this->button3->ForeColor = System::Drawing::Color::Black;
 			this->button3->Location = System::Drawing::Point(36, 361);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(104, 45);
@@ -233,7 +230,7 @@ namespace AS {
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->label5->BackColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
 			this->label5->Location = System::Drawing::Point(130, 20);
 			this->label5->Name = L"label5";
@@ -248,6 +245,7 @@ namespace AS {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::InactiveCaption;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(854, 476);
 			this->Controls->Add(this->label5);

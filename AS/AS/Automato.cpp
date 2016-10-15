@@ -10,10 +10,10 @@ Automato::~Automato(){
 
 ponteiro Automato::automato1(){
 
-	string imagemInicial = "C:\\AS/images/automato1/original.png";
-	string imagemEstado0 = "C:\\AS/images/automato1/estado0.png";
-	string imagemEstado1 = "C:\\AS/images/automato1/estado1.png";
-	string imagemEstado2 = "C:\\AS/images/automato1/estado2.png";
+	string imagemInicial = "D:\\Automaton Simulator/AutomatonSimulator/AS/images/automato1/original.png";
+	string imagemEstado0 = "D:\\Automaton Simulator/AutomatonSimulator/AS/images/automato1/estado0.png";
+	string imagemEstado1 = "D:\\Automaton Simulator/AutomatonSimulator/AS/images/automato1/estado1.png";
+	string imagemEstado2 = "D:\\Automaton Simulator/AutomatonSimulator/AS/images/automato1/estado2.png";
 
 	ponteiro Q0 = criaEstado("Q0", false, imagemEstado0);
 	ponteiro Q1 = criaEstado("Q1", false, imagemEstado1);

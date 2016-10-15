@@ -11,7 +11,7 @@ Controle::~Controle(){
 void Controle::controlarExecucao(void){
 	AS::MenuAS menu;
 	AS::FormListaAutomato listaAutomato;
-	
+	AS::SobreAs sobre;
 	Automato automato;
 
 	bool Resultado;
@@ -37,6 +37,8 @@ void Controle::controlarExecucao(void){
 			}
 			listaAutomato.setStatus(-1);
 			break;
+		case 2:
+			sobre.ShowDialog();
 		default:
 			break;
 		}

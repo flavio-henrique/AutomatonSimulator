@@ -9,6 +9,7 @@ using namespace std;
 #include "FormListaAutomato.h"
 #include "TesteAutomatoForm.h"
 #include "Automato.h"
+#include "SobreAs.h"
 
 using namespace System;
 using namespace System::Windows::Forms;

@@ -131,6 +131,7 @@
     <ClCompile Include="FormListaAutomato.cpp" />
     <ClCompile Include="MenuAS.cpp" />
     <ClCompile Include="Principal.cpp" />
+    <ClCompile Include="SobreAs.cpp" />
     <ClCompile Include="TesteAutomatoForm.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +141,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MenuAS.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SobreAs.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="TesteAutomatoForm.h">
@@ -159,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAS.resx">
       <DependentUpon>MenuAS.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SobreAs.resx">
+      <DependentUpon>SobreAs.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TesteAutomatoForm.resx">
       <DependentUpon>TesteAutomatoForm.h</DependentUpon>

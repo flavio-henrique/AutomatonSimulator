@@ -65,7 +65,8 @@ namespace AS {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(262, 151);
+			this->button1->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->button1->Location = System::Drawing::Point(272, 268);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(332, 45);
 			this->button1->TabIndex = 0;
@@ -75,7 +76,8 @@ namespace AS {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(262, 224);
+			this->button2->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->button2->Location = System::Drawing::Point(272, 341);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(332, 45);
 			this->button2->TabIndex = 1;
@@ -84,7 +86,8 @@ namespace AS {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(262, 290);
+			this->button3->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->button3->Location = System::Drawing::Point(272, 407);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(332, 45);
 			this->button3->TabIndex = 2;
@@ -93,15 +96,16 @@ namespace AS {
 			// 
 			// label2
 			// 
+			this->label2->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::Transparent;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Gudea", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(53)), static_cast<System::Int32>(static_cast<System::Byte>(158)),
 				static_cast<System::Int32>(static_cast<System::Byte>(123)));
-			this->label2->Location = System::Drawing::Point(243, 9);
+			this->label2->Location = System::Drawing::Point(124, 172);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(412, 43);
+			this->label2->Size = System::Drawing::Size(588, 55);
 			this->label2->TabIndex = 5;
 			this->label2->Text = L"Lista de Autômatos Finitos";
 			// 
@@ -110,6 +114,7 @@ namespace AS {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(854, 476);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->button3);
@@ -118,6 +123,7 @@ namespace AS {
 			this->Name = L"FormListaAutomato";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"FormListaAutomato";
+			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->FormClosed += gcnew System::Windows::Forms::FormClosedEventHandler(this, &FormListaAutomato::FormListaAutomatoClosed);
 			this->ResumeLayout(false);
 			this->PerformLayout();

@@ -151,13 +151,13 @@ namespace AS {
 			// 
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::Transparent;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Gudea", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(53)), static_cast<System::Int32>(static_cast<System::Byte>(158)),
 				static_cast<System::Int32>(static_cast<System::Byte>(123)));
 			this->label2->Location = System::Drawing::Point(304, 9);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(300, 43);
+			this->label2->Size = System::Drawing::Size(309, 39);
 			this->label2->TabIndex = 4;
 			this->label2->Text = L"Teste do Automato";
 			// 
@@ -165,11 +165,11 @@ namespace AS {
 			// 
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::Transparent;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Gudea", 14.25F));
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
 			this->label3->ForeColor = System::Drawing::Color::White;
 			this->label3->Location = System::Drawing::Point(549, 105);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(154, 23);
+			this->label3->Size = System::Drawing::Size(153, 24);
 			this->label3->TabIndex = 5;
 			this->label3->Text = L"Informe a palavra";
 			// 
@@ -256,5 +256,6 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 			 setImagemEstado("C:\\AS/images/automato1/estado1.png");
 }
+
 };
 }

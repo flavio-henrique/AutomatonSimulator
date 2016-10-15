@@ -24,24 +24,14 @@ ponteiro Automato::automato1(){
 	Q0->transicoes[0].simboloAceito = 'a';
 	Q0->transicoes[0].link = Q1;
 	Q1->transicoes[1].simboloAceito = 'a';
-	Q1->transicoes[1].link = Q1;
+	Q1->transicoes[1].link = Q0;
 
-	Q0->transicoes[0].simboloAceito = 'b';
-	Q0->transicoes[0].link = Q1;
 	Q1->transicoes[0].simboloAceito = 'b';
-	Q1->transicoes[0].link = Q1;
-	
-	Q0->transicoes[1].simboloAceito = 'c';
-	Q0->transicoes[1].link = Q1;
-	Q1->transicoes[1].simboloAceito = 'c';
-	Q1->transicoes[1].link = Q1;
-	
-	Q1->transicoes[0].simboloAceito = 'n';
-	Q1->transicoes[0].link = Q0;
-	Q0->transicoes[0].simboloAceito = 'n';
-	Q0->transicoes[0].link = Q0;
+	Q1->transicoes[0].link = Q2;
+	Q2->transicoes[0].simboloAceito = 'b';
+	Q2->transicoes[0].link = Q1;
 
-	Q1->isFinal = true;
+	Q2->isFinal = true;
 	
 	return Q0;
 }

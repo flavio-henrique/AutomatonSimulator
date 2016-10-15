@@ -39,8 +39,7 @@ namespace AS {
 		void setStatus(int);
 		string getPalavra();
 		void setLabel(string);
-		void setProxEstado(bool);
-		bool getProxEstado();
+		void setSimbolo(string);
 		void setImagemEstado(string);
 		bool testeAutomato1(string);
 		void setAF(int);
@@ -72,8 +71,8 @@ namespace AS {
 		/// </summary>
 		int Imagem;
 		int Status;
-		bool proxEstado = false;
 		ponteiro af;
+		ponteiro afAux;
 		int I = 0;
 		
 
@@ -84,6 +83,8 @@ namespace AS {
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Button^  button2;
+	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::Label^  label5;
 	private: System::Windows::Forms::Button^  button3;
 
 			 
@@ -104,17 +105,25 @@ namespace AS {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
+			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(81)), static_cast<System::Int32>(static_cast<System::Byte>(161)),
+				static_cast<System::Int32>(static_cast<System::Byte>(243)));
+			this->button1->FlatAppearance->BorderSize = 0;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Gudea", 14));
+			this->button1->ForeColor = System::Drawing::Color::White;
 			this->button1->Location = System::Drawing::Point(541, 183);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(301, 37);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Validar";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &TesteAutomatoForm::button1_Click);
 			// 
 			// label1
@@ -131,6 +140,7 @@ namespace AS {
 			// 
 			// textBox1
 			// 
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
 			this->textBox1->Location = System::Drawing::Point(541, 140);
 			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
@@ -175,23 +185,64 @@ namespace AS {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(159, 361);
+			this->button2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(81)), static_cast<System::Int32>(static_cast<System::Byte>(161)),
+				static_cast<System::Int32>(static_cast<System::Byte>(243)));
+			this->button2->FlatAppearance->BorderSize = 0;
+			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Gudea", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button2->ForeColor = System::Drawing::Color::White;
+			this->button2->Location = System::Drawing::Point(158, 361);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(89, 45);
+			this->button2->Size = System::Drawing::Size(99, 45);
 			this->button2->TabIndex = 6;
 			this->button2->Text = L"Próximo";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &TesteAutomatoForm::button2_Click);
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(53, 361);
+			this->button3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(81)), static_cast<System::Int32>(static_cast<System::Byte>(161)),
+				static_cast<System::Int32>(static_cast<System::Byte>(243)));
+			this->button3->FlatAppearance->BorderSize = 0;
+			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button3->Font = (gcnew System::Drawing::Font(L"Gudea", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button3->ForeColor = System::Drawing::Color::White;
+			this->button3->Location = System::Drawing::Point(36, 361);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(88, 45);
+			this->button3->Size = System::Drawing::Size(104, 45);
 			this->button3->TabIndex = 7;
-			this->button3->Text = L"Cancelar";
-			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Text = L"Novo Teste";
+			this->button3->UseVisualStyleBackColor = false;
 			this->button3->Click += gcnew System::EventHandler(this, &TesteAutomatoForm::button3_Click);
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->BackColor = System::Drawing::Color::Transparent;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label4->ForeColor = System::Drawing::Color::White;
+			this->label4->Location = System::Drawing::Point(35, 20);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(89, 24);
+			this->label4->TabIndex = 8;
+			this->label4->Text = L"Símbolo: ";
+			this->label4->Visible = false;
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label5->Location = System::Drawing::Point(130, 20);
+			this->label5->Name = L"label5";
+			this->label5->Padding = System::Windows::Forms::Padding(10, 1, 10, 1);
+			this->label5->RightToLeft = System::Windows::Forms::RightToLeft::No;
+			this->label5->Size = System::Drawing::Size(40, 26);
+			this->label5->TabIndex = 9;
+			this->label5->Text = L"a";
+			this->label5->Visible = false;
 			// 
 			// TesteAutomatoForm
 			// 
@@ -199,6 +250,8 @@ namespace AS {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(854, 476);
+			this->Controls->Add(this->label5);
+			this->Controls->Add(this->label4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label3);
@@ -219,7 +272,21 @@ namespace AS {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 setImagemEstado(af->imagem);
+				 string palavra = getPalavra();
+
+				 afAux = af;
+				 setImagemEstado(afAux->imagem);
+				 I = 0;
+				 setLabel("");
+				 button1->Enabled = false;
+				 button1->Text = "Em processo...";
+				 button2->Enabled = true;
+				 button3->Enabled = true; 
+				 label4->Visible = true;
+				 label5->Visible = true;
+				 string simbolo = " ";
+				 simbolo[0] = palavra[I];
+				 setSimbolo(simbolo);
 	}
 	private: System::Void TesteAutomatoForm_FormClosed(System::Object^  sender, System::Windows::Forms::FormClosedEventArgs^  e) {
 				 Status = 0;
@@ -232,29 +299,43 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 			 string palavra = getPalavra();
 			 int tamanho = palavra.size();
 			 bool rejeita = true;
-
-
+			 
+			 
+			 
 			 for (int j = 0; j < 10; j++){
-				 if (af->transicoes[j].simboloAceito == palavra[I]){
+				 if (afAux->transicoes[j].simboloAceito == palavra[I]){
 
-					 af = af->transicoes[j].link;
+					 afAux = afAux->transicoes[j].link;
 					 I++;
-					 setImagemEstado(af->imagem);
+					 setImagemEstado(afAux->imagem);
 					 rejeita = false;
 					 break;
 				 }
 			 }
+			 string simbolo = " ";
+			 simbolo[0] = palavra[I];
+			 setSimbolo(simbolo);
 			 if (rejeita){
 				 setLabel("Rejeita");
+				 button2->Enabled = false;
 			 }
-			 if (af->isFinal == true && palavra.size() == I){
+			 if (afAux->isFinal == true && palavra.size() == I){
 				 setLabel("Aceita");
+				 button2->Enabled = false;
 			 }
 
 }
 
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
-			 setImagemEstado("C:\\AS/images/automato1/estado1.png");
+			 afAux = af;
+			 setImagemEstado(afAux->imagemInicial);
+			 I = 0;
+			 setLabel("");
+			 textBox1->Text = "";
+			 button1->Text = "Validar";
+			 button1->Enabled = true;
+			 label4->Visible = false;
+			 label5->Visible = false;
 }
 
 };

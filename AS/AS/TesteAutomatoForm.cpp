@@ -25,6 +25,12 @@ void TesteAutomatoForm::setLabel(string label){
 	delete(Texto);
 }
 
+void TesteAutomatoForm::setSimbolo(string simbolo){
+	String ^ Texto = gcnew String(simbolo.c_str());
+	label5->Text = Texto;
+	delete(Texto);
+}
+
 void TesteAutomatoForm::setImagemEstado(string caminho){
 
 	String ^ path = gcnew String(caminho.c_str());
@@ -32,16 +38,10 @@ void TesteAutomatoForm::setImagemEstado(string caminho){
 	delete(path);
 }
 
-void TesteAutomatoForm::setProxEstado(bool valor){
-	proxEstado = valor;
-}
-
-bool TesteAutomatoForm::getProxEstado(){
-	return proxEstado;
-}
-
 void TesteAutomatoForm::setAF(int op){
 	Automato AF;
+	button2->Enabled = false;
+	button3->Enabled = false;
 	switch  (op){
 	case 1:
 		af = AF.automato1();

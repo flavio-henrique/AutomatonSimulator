@@ -36,6 +36,9 @@
     <ClCompile Include="SobreAs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SobreAutomato1Form.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Controle.h">
@@ -56,6 +59,9 @@
     <ClInclude Include="SobreAs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SobreAutomato1Form.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FormListaAutomato.resx">
@@ -65,6 +71,12 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="TesteAutomatoForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SobreAs.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SobreAutomato1Form.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

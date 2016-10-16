@@ -8,6 +8,7 @@ using namespace std;
 #include "MenuAS.h"
 #include "FormListaAutomato.h"
 #include "TesteAutomatoForm.h"
+#include "SobreAutomato1Form.h"
 #include "Automato.h"
 #include "SobreAs.h"
 

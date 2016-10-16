@@ -56,5 +56,16 @@ ponteiro Automato::criaEstado(string nome, bool isFinal, string imagem){
 	return estado;
 }
 
+ponteiro Automato::automato2(){
+	string ImagemInicial="D:\Automaton Simulator\AutomatonSimulator\AS\images\automato2\1.gif";
+	string ImagemEstado0="D:\Automaton Simulator\AutomatonSimulator\AS\images\automato2\2.gif";
+	string ImagemEstado1="D:\Automaton Simulator\AutomatonSimulator\AS\images\automato2\3.gif";
+	string ImagemEStado2="D:\Automaton Simulator\AutomatonSimulator\AS\images\automato2\4.gif";
 
+	ponteiro Q0 = criaEstado("Q0", false, ImagemEstado0);
+	ponteiro Q1 = criaEstado("Q1", false, ImagemEstado1);
+	ponteiro Q2 = criaEstado("Q2", true, ImagemEStado2);
+
+
+}
 

@@ -27,6 +27,8 @@ public:
 	~Automato();
 	ponteiro automato1();
 	ponteiro criaEstado(string, bool, string);
+	//ponteiro automato2();
+	//ponteiro criaEstado2();
 };
 #endif
 

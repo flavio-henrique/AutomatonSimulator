@@ -48,6 +48,7 @@ namespace AS {
 		/// </summary>
 		System::ComponentModel::Container ^components;
 	private: System::Windows::Forms::Label^  label2;
+
 			 int Status;
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -66,33 +67,45 @@ namespace AS {
 			// button1
 			// 
 			this->button1->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->button1->Location = System::Drawing::Point(272, 268);
+			this->button1->BackColor = System::Drawing::Color::White;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Gudea", 12.25F));
+			this->button1->ForeColor = System::Drawing::Color::MediumSeaGreen;
+			this->button1->Location = System::Drawing::Point(272, 194);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(332, 45);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"Autômato 1";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Text = L"Autômato Linguagem Formal";
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &FormListaAutomato::button1_Click);
 			// 
 			// button2
 			// 
 			this->button2->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->button2->Location = System::Drawing::Point(272, 341);
+			this->button2->BackColor = System::Drawing::Color::White;
+			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Gudea", 12.25F));
+			this->button2->ForeColor = System::Drawing::Color::MediumSeaGreen;
+			this->button2->Location = System::Drawing::Point(272, 260);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(332, 45);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Autômato 2";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			// 
 			// button3
 			// 
 			this->button3->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->button3->Location = System::Drawing::Point(272, 407);
+			this->button3->BackColor = System::Drawing::Color::White;
+			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button3->Font = (gcnew System::Drawing::Font(L"Gudea", 12.25F));
+			this->button3->ForeColor = System::Drawing::Color::MediumSeaGreen;
+			this->button3->Location = System::Drawing::Point(272, 322);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(332, 45);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Autômato 3";
-			this->button3->UseVisualStyleBackColor = true;
+			this->button3->UseVisualStyleBackColor = false;
 			// 
 			// label2
 			// 
@@ -101,9 +114,8 @@ namespace AS {
 			this->label2->BackColor = System::Drawing::Color::Transparent;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(53)), static_cast<System::Int32>(static_cast<System::Byte>(158)),
-				static_cast<System::Int32>(static_cast<System::Byte>(123)));
-			this->label2->Location = System::Drawing::Point(124, 172);
+			this->label2->ForeColor = System::Drawing::Color::MediumSeaGreen;
+			this->label2->Location = System::Drawing::Point(119, 74);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(588, 55);
 			this->label2->TabIndex = 5;

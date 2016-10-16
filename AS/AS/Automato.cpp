@@ -8,12 +8,24 @@ Automato::~Automato(){
 
 }
 
+string Automato::getDiretorio(){
+	string result;
+	TCHAR NPath[MAX_PATH];
+
+	GetCurrentDirectory(MAX_PATH, NPath);
+	result = NPath;
+	result = result + "/../";
+	replace(result.begin(), result.end(), '\\', '/');
+	result[2] = '\\';
+	return result;
+}
+
 ponteiro Automato::automato1(){
 
-	string imagemInicial = "C:\\repositories/FAITEC/AS/images/automato1/original.png";
-	string imagemEstado0 = "C:\\repositories/FAITEC/AS/images/automato1/estado0.png";
-	string imagemEstado1 = "C:\\repositories/FAITEC/AS/images/automato1/estado1.png";
-	string imagemEstado2 = "C:\\repositories/FAITEC/AS/images/automato1/estado2.png";
+	string imagemInicial = getDiretorio() + "images/automato1/original.png";
+	string imagemEstado0 = getDiretorio() + "images/automato1/estado0.png";
+	string imagemEstado1 = getDiretorio() +  "images/automato1/estado1.png";
+	string imagemEstado2 = getDiretorio() + "images/automato1/estado2.png";
 
 	ponteiro Q0 = criaEstado("Q0", false, imagemEstado0);
 	ponteiro Q1 = criaEstado("Q1", false, imagemEstado1);

@@ -5,6 +5,8 @@
 using namespace std;
 #include <string>
 #include <time.h>
+#include <windows.h>
+#include <algorithm>
 
 typedef struct Elementos * ponteiro;
 typedef struct {
@@ -26,6 +28,7 @@ public:
 	Automato();
 	~Automato();
 	ponteiro automato1();
+	string getDiretorio();
 	ponteiro criaEstado(string, bool, string);
 };
 #endif

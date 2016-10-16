@@ -26,12 +26,22 @@ void Controle::controlarExecucao(void){
 				switch (listaAutomato.getStatus())
 				{
 				case 1:
-					AS::TesteAutomatoForm teste(1);
-					while (teste.getStatus() != 0){
-						teste.setStatus(1);
-						teste.ShowDialog();
+					AS::SobreAutomato1Form sobreAF1;
+					while (sobreAF1.getStatus() != 0){
+						sobreAF1.ShowDialog();
+
+						switch (sobreAF1.getStatus()){
+						case 1:
+							AS::TesteAutomatoForm teste(1);
+							while (teste.getStatus() != 0){
+								teste.setStatus(1);
+								teste.ShowDialog();
+							}
+							teste.setStatus(-1);
+							break;
+						}
 					}
-					teste.setStatus(-1);
+					sobreAF1.setStatus(-1);
 					break;
 				}
 			}

@@ -30,7 +30,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CLRSupport>true</CLRSupport>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -132,6 +132,7 @@
     <ClCompile Include="MenuAS.cpp" />
     <ClCompile Include="Principal.cpp" />
     <ClCompile Include="SobreAs.cpp" />
+    <ClCompile Include="SobreAutomato1Form.cpp" />
     <ClCompile Include="TesteAutomatoForm.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +145,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="SobreAs.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SobreAutomato1Form.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="TesteAutomatoForm.h">
@@ -166,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SobreAs.resx">
       <DependentUpon>SobreAs.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SobreAutomato1Form.resx">
+      <DependentUpon>SobreAutomato1Form.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TesteAutomatoForm.resx">
       <DependentUpon>TesteAutomatoForm.h</DependentUpon>

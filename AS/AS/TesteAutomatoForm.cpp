@@ -18,10 +18,9 @@ string TesteAutomatoForm::getPalavra(){
 	return Palavra;
 }
 
-
-void TesteAutomatoForm::setLabel(string label){
-	String ^ Texto = gcnew String(label.c_str());
-	label1->Text = Texto;
+void TesteAutomatoForm::setSimbolo(string simbolo){
+	String ^ Texto = gcnew String(simbolo.c_str());
+	label5->Text = Texto;
 	delete(Texto);
 }
 
@@ -31,17 +30,26 @@ void TesteAutomatoForm::setImagemEstado(string caminho){
 	pictureBox1->Image = Image::FromFile(path);
 	delete(path);
 }
-
-void TesteAutomatoForm::setProxEstado(bool valor){
-	proxEstado = valor;
+void TesteAutomatoForm::unsetImagemResultado(){
+	if (resultado->Image != nullptr)
+	{
+		//resultado->Image->Dispose();
+		resultado->Image = nullptr;
+	}
 }
 
-bool TesteAutomatoForm::getProxEstado(){
-	return proxEstado;
+
+void TesteAutomatoForm::setImagemResultado(string caminho){
+
+	String ^ path = gcnew String(caminho.c_str());
+	resultado->Image = Image::FromFile(path);
+	delete(path);
 }
 
 void TesteAutomatoForm::setAF(int op){
 	Automato AF;
+	button2->Enabled = false;
+	button3->Enabled = false;
 	switch  (op){
 	case 1:
 		af = AF.automato1();
@@ -71,8 +79,6 @@ bool TesteAutomatoForm::testeAutomato1(string palavra){
 		for (j = 0; j < 10; j++){
 			if (aux->transicoes[j].simboloAceito == palavra[i]){
 				
-				//while (!getProxEstado()){
-				//}
 				aux = aux->transicoes[j].link;
 				setImagemEstado(aux->imagem);
 				sleepcp(1000);

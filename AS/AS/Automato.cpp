@@ -55,15 +55,32 @@ ponteiro Automato::criaEstado(string nome, bool isFinal, string imagem){
 }
 
 ponteiro Automato::automato2(){
-	string ImagemInicial="D:\Automaton Simulator\AutomatonSimulator\AS\images\automato2\1.gif";
-	string ImagemEstado0="D:\Automaton Simulator\AutomatonSimulator\AS\images\automato2\2.gif";
-	string ImagemEstado1="D:\Automaton Simulator\AutomatonSimulator\AS\images\automato2\3.gif";
-	string ImagemEStado2="D:\Automaton Simulator\AutomatonSimulator\AS\images\automato2\4.gif";
+	string ImagemInicial = getDiretorio() + "images/automato2/1.gif";
+	string ImagemEstado0 = getDiretorio() + "images/automato2/2.gif";
+	string ImagemEstado1 = getDiretorio() + "images/automato2/3.gif";
+	string ImagemEStado2 = getDiretorio() + "images/automato2/4.gif";
 
 	ponteiro Q0 = criaEstado("Q0", false, ImagemEstado0);
 	ponteiro Q1 = criaEstado("Q1", false, ImagemEstado1);
 	ponteiro Q2 = criaEstado("Q2", true, ImagemEStado2);
 
+	Q0->imagemInicial = ImagemInicial;
 
+	Q0->transicoes[0].simboloAceito = 'a';
+	Q0->transicoes[0].link = Q1;
+	Q0->transicoes[1].simboloAceito = 'b';
+	Q0->transicoes[1].link = Q0;
+
+	Q1->transicoes[0].simboloAceito = 'a';
+	Q1->transicoes[0].link = Q2;
+	Q1->transicoes[1].simboloAceito = 'b';
+	Q1->transicoes[1].link = Q0;
+
+	Q2->transicoes[0].simboloAceito = 'a';
+	Q2->transicoes[0].link = Q2;
+	Q2->transicoes[1].simboloAceito = 'b';
+	Q2->transicoes[1].link = Q0; 
+
+	return  Q0;
 }
 

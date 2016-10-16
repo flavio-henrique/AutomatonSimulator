@@ -76,5 +76,8 @@
     <EmbeddedResource Include="SobreAs.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="SobreAutomato1Form.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

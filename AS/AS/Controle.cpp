@@ -13,11 +13,13 @@ void Controle::controlarExecucao(void){
 	AS::FormListaAutomato listaAutomato;
 	AS::SobreAs sobre;
 	Automato automato;
+	AS::SobreAutomato1Form sobreAF1;
 
 	bool Resultado;
 
 	while (menu.getStatus() != 0){
 		menu.ShowDialog();
+		
 		switch (menu.getStatus()){
 		case 1:
 			while (listaAutomato.getStatus() != 0){
@@ -26,7 +28,7 @@ void Controle::controlarExecucao(void){
 				switch (listaAutomato.getStatus())
 				{
 				case 1:
-					AS::SobreAutomato1Form sobreAF1;
+					
 					while (sobreAF1.getStatus() != 0){
 						sobreAF1.ShowDialog();
 
@@ -38,6 +40,23 @@ void Controle::controlarExecucao(void){
 								teste.ShowDialog();
 							}
 							teste.setStatus(-1);
+							break; 
+						}
+					}
+					sobreAF1.setStatus(-1);
+					break;
+				case 2:
+					
+					while (sobreAF1.getStatus() != 0){
+						sobreAF1.ShowDialog();
+						switch (sobreAF1.getStatus()){
+						case 1:
+							AS::TesteAutomatoForm teste2(2);
+							while (teste2.getStatus() != 0){
+								teste2.setStatus(1);
+								teste2.ShowDialog();
+							}
+							teste2.setStatus(-1);
 							break;
 						}
 					}

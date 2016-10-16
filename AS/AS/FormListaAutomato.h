@@ -69,7 +69,7 @@ namespace AS {
 			this->button1->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->button1->BackColor = System::Drawing::Color::White;
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Gudea", 12.25F));
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->button1->ForeColor = System::Drawing::Color::MediumSeaGreen;
 			this->button1->Location = System::Drawing::Point(272, 194);
 			this->button1->Name = L"button1";
@@ -84,7 +84,7 @@ namespace AS {
 			this->button2->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->button2->BackColor = System::Drawing::Color::White;
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Gudea", 12.25F));
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->button2->ForeColor = System::Drawing::Color::MediumSeaGreen;
 			this->button2->Location = System::Drawing::Point(272, 260);
 			this->button2->Name = L"button2";
@@ -92,13 +92,14 @@ namespace AS {
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Autômato 2";
 			this->button2->UseVisualStyleBackColor = false;
+			this->button2->Click += gcnew System::EventHandler(this, &FormListaAutomato::button2_Click);
 			// 
 			// button3
 			// 
 			this->button3->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->button3->BackColor = System::Drawing::Color::White;
 			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button3->Font = (gcnew System::Drawing::Font(L"Gudea", 12.25F));
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->button3->ForeColor = System::Drawing::Color::MediumSeaGreen;
 			this->button3->Location = System::Drawing::Point(272, 322);
 			this->button3->Name = L"button3";
@@ -150,5 +151,9 @@ namespace AS {
 				 Status = 1;
 				 this->Visible = false;
 	}
-	};
+	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Status = 2;
+				 this->Visible = false;
+	}
+};
 }

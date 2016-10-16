@@ -55,6 +55,10 @@ void TesteAutomatoForm::setAF(int op){
 		af = AF.automato1();
 		setImagemEstado(af->imagemInicial);
 		break;
+	case 2:
+		af = AF.automato2();
+		setImagemEstado(af->imagemInicial);
+		break;
 	}
 }
 

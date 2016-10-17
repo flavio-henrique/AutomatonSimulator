@@ -134,6 +134,7 @@
     <ClCompile Include="SobreAs.cpp" />
     <ClCompile Include="SobreAutomato1Form.cpp" />
     <ClCompile Include="TesteAutomatoForm.cpp" />
+    <ClCompile Include="TesteAutomatoPorta.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Automato.h" />
@@ -151,6 +152,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="TesteAutomatoForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TesteAutomatoPorta.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -176,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TesteAutomatoForm.resx">
       <DependentUpon>TesteAutomatoForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TesteAutomatoPorta.resx">
+      <DependentUpon>TesteAutomatoPorta.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

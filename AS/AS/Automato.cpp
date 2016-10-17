@@ -84,3 +84,21 @@ ponteiro Automato::automato2(){
 	return  Q0;
 }
 
+ponteiro Automato::automato3(){
+	string ImagemInicial = getDiretorio() + "images/automatoPorta/automatoPortaFechadaOriginal.png";
+	string ImagemEstado0 = getDiretorio() + "images/automatoPorta/automatoPortaEstado0.png";
+	string ImagemEstado1 = getDiretorio() + "images/automatoPorta/automatoPortaEstado1.png";
+
+	ponteiro Q0 = criaEstado("Q0", false, ImagemEstado0);
+	ponteiro Q1 = criaEstado("Q1", true, ImagemEstado1);
+
+	Q0->imagemInicial = ImagemInicial;
+
+	Q0->transicoes[0].simboloAceito = 'a';
+	Q0->transicoes[0].link = Q1;
+	Q0->transicoes[1].simboloAceito = 'b';
+	Q0->transicoes[1].link = Q0;
+
+	return  Q0;
+}
+

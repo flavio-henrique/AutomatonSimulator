@@ -39,6 +39,9 @@
     <ClCompile Include="SobreAutomato1Form.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TesteAutomatoPorta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Controle.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SobreAutomato1Form.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TesteAutomatoPorta.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

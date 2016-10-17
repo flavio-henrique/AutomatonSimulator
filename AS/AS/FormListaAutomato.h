@@ -109,6 +109,7 @@ namespace AS {
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Autômato 3";
 			this->button3->UseVisualStyleBackColor = false;
+			this->button3->Click += gcnew System::EventHandler(this, &FormListaAutomato::button3_Click);
 			// 
 			// label2
 			// 
@@ -173,9 +174,15 @@ namespace AS {
 				 Status = 2;
 				 this->Visible = false;
 	}
-private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
-			 Status = 0;
+
+	private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Status = 0;
+				 this->Visible = false;
+	}
+
+	private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Status = 3;
 			 this->Visible = false;
-}
+    }
 };
 }

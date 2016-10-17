@@ -62,6 +62,22 @@ void Controle::controlarExecucao(void){
 					}
 					sobreAF1.setStatus(-1);
 					break;
+				case 3:
+					while (sobreAF1.getStatus() != 0){
+						sobreAF1.ShowDialog();
+						switch (sobreAF1.getStatus()){
+						case 1:
+							AS::TesteAutomatoPorta testeAFPorta;
+							while (testeAFPorta.getStatus() != 0){
+								testeAFPorta.setStatus(1);
+								testeAFPorta.ShowDialog();
+							}
+							testeAFPorta.setStatus(-1);
+							break;
+						}
+					}
+					sobreAF1.setStatus(-1);
+					break;
 				}
 			}
 			listaAutomato.setStatus(-1);

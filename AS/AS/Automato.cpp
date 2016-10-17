@@ -55,10 +55,10 @@ ponteiro Automato::criaEstado(string nome, bool isFinal, string imagem){
 }
 
 ponteiro Automato::automato2(){
-	string ImagemInicial = getDiretorio() + "images/automato2/1.gif";
-	string ImagemEstado0 = getDiretorio() + "images/automato2/2.gif";
-	string ImagemEstado1 = getDiretorio() + "images/automato2/3.gif";
-	string ImagemEStado2 = getDiretorio() + "images/automato2/4.gif";
+	string ImagemInicial = getDiretorio() + "images/automato2/automatoOriginal.png";
+	string ImagemEstado0 = getDiretorio() + "images/automato2/estado0.png";
+	string ImagemEstado1 = getDiretorio() + "images/automato2/estado1.png";
+	string ImagemEStado2 = getDiretorio() + "images/automato2/estado2.png";
 
 	ponteiro Q0 = criaEstado("Q0", false, ImagemEstado0);
 	ponteiro Q1 = criaEstado("Q1", false, ImagemEstado1);

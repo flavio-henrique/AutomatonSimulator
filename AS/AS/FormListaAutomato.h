@@ -48,6 +48,7 @@ namespace AS {
 		/// </summary>
 		System::ComponentModel::Container ^components;
 	private: System::Windows::Forms::Label^  label2;
+	private: System::Windows::Forms::Button^  button4;
 
 			 int Status;
 #pragma region Windows Form Designer generated code
@@ -62,6 +63,7 @@ namespace AS {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -71,7 +73,7 @@ namespace AS {
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->button1->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button1->Location = System::Drawing::Point(272, 194);
+			this->button1->Location = System::Drawing::Point(272, 209);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(332, 45);
 			this->button1->TabIndex = 0;
@@ -86,7 +88,7 @@ namespace AS {
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->button2->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button2->Location = System::Drawing::Point(272, 260);
+			this->button2->Location = System::Drawing::Point(272, 275);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(332, 45);
 			this->button2->TabIndex = 1;
@@ -101,7 +103,7 @@ namespace AS {
 			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->button3->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button3->Location = System::Drawing::Point(272, 322);
+			this->button3->Location = System::Drawing::Point(272, 337);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(332, 45);
 			this->button3->TabIndex = 2;
@@ -116,11 +118,26 @@ namespace AS {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->label2->Location = System::Drawing::Point(119, 74);
+			this->label2->Location = System::Drawing::Point(119, 89);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(588, 55);
 			this->label2->TabIndex = 5;
 			this->label2->Text = L"Lista de Autômatos Finitos";
+			// 
+			// button4
+			// 
+			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button4->BackColor = System::Drawing::Color::White;
+			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold));
+			this->button4->ForeColor = System::Drawing::Color::MediumSeaGreen;
+			this->button4->Location = System::Drawing::Point(129, 356);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(140, 45);
+			this->button4->TabIndex = 6;
+			this->button4->Text = L"Voltar";
+			this->button4->UseVisualStyleBackColor = false;
+			this->button4->Click += gcnew System::EventHandler(this, &FormListaAutomato::button4_Click);
 			// 
 			// FormListaAutomato
 			// 
@@ -129,6 +146,7 @@ namespace AS {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(854, 476);
+			this->Controls->Add(this->button4);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
@@ -155,5 +173,9 @@ namespace AS {
 				 Status = 2;
 				 this->Visible = false;
 	}
+private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Status = 0;
+			 this->Visible = false;
+}
 };
 }

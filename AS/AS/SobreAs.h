@@ -41,6 +41,7 @@ namespace AS {
 	private: System::Windows::Forms::PictureBox^  pictureBox2;
 	protected:
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
+	private: System::Windows::Forms::Button^  button4;
 
 	protected:
 
@@ -60,6 +61,7 @@ namespace AS {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(SobreAs::typeid));
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
@@ -69,7 +71,7 @@ namespace AS {
 			this->pictureBox2->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->pictureBox2->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(63, 113);
+			this->pictureBox2->Location = System::Drawing::Point(63, 122);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(597, 638);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -81,12 +83,27 @@ namespace AS {
 			this->pictureBox1->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(31, -36);
+			this->pictureBox1->Location = System::Drawing::Point(47, -89);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(629, 279);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox1->Size = System::Drawing::Size(610, 345);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 4;
 			this->pictureBox1->TabStop = false;
+			// 
+			// button4
+			// 
+			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button4->BackColor = System::Drawing::Color::White;
+			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold));
+			this->button4->ForeColor = System::Drawing::Color::MediumSeaGreen;
+			this->button4->Location = System::Drawing::Point(108, 474);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(140, 45);
+			this->button4->TabIndex = 7;
+			this->button4->Text = L"Voltar";
+			this->button4->UseVisualStyleBackColor = false;
+			this->button4->Click += gcnew System::EventHandler(this, &SobreAs::button4_Click);
 			// 
 			// SobreAs
 			// 
@@ -94,7 +111,8 @@ namespace AS {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(709, 549);
+			this->ClientSize = System::Drawing::Size(709, 600);
+			this->Controls->Add(this->button4);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->pictureBox2);
 			this->Name = L"SobreAs";
@@ -106,5 +124,9 @@ namespace AS {
 		}
 #pragma endregion
 	
-	};
+	private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Status = 0;
+				 this->Visible = false;
+	}
+};
 }

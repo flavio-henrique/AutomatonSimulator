@@ -58,6 +58,7 @@ namespace AS {
 		int Status;
 		int op;
 	private: System::Windows::Forms::PictureBox^  pictureBox2;
+	private: System::Windows::Forms::Button^  button4;
 			 System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -80,6 +81,7 @@ namespace AS {
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -239,13 +241,30 @@ namespace AS {
 			this->pictureBox2->TabIndex = 18;
 			this->pictureBox2->TabStop = false;
 			// 
+			// button4
+			// 
+			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button4->BackColor = System::Drawing::Color::White;
+			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button4->ForeColor = System::Drawing::Color::MediumSeaGreen;
+			this->button4->Location = System::Drawing::Point(73, 479);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(140, 45);
+			this->button4->TabIndex = 19;
+			this->button4->Text = L"Voltar";
+			this->button4->UseVisualStyleBackColor = false;
+			this->button4->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::button4_Click);
+			// 
 			// SobreAutomato1Form
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(854, 476);
+			this->ClientSize = System::Drawing::Size(854, 565);
+			this->Controls->Add(this->button4);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label9);
@@ -274,6 +293,10 @@ namespace AS {
 				 this->Visible = false;
 	}
 private: System::Void SobreAutomato1Form_FormClosed(System::Object^  sender, System::Windows::Forms::FormClosedEventArgs^  e) {
+			 Status = 0;
+			 this->Visible = false;
+}
+private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Status = 0;
 			 this->Visible = false;
 }

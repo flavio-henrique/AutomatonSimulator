@@ -102,3 +102,44 @@ ponteiro Automato::automato3(){
 	return  Q0;
 }
 
+ponteiro Automato::automato4(){
+	string ImagemInicial = getDiretorio() + "images/automato4/automato.png";
+	string ImagemEstado0 = getDiretorio() + "images/automato4/estado0.png";
+	string ImagemEstado1 = getDiretorio() + "images/automato4/estado1.png";
+	string ImagemEstado2 = getDiretorio() + "images/automato4/estado2.png";
+	string ImagemEstado3 = getDiretorio() + "images/automato4/estado3.png";
+	string ImagemEstado4 = getDiretorio() + "images/automato4/estado4.png";
+	string ImagemEstado5 = getDiretorio() + "images/automato4/estado5.png";
+	string ImagemEstado6 = getDiretorio() + "images/automato4/estado6.png";
+
+	ponteiro Q0 = criaEstado("Q0", false, ImagemEstado0);
+	ponteiro Q1 = criaEstado("Q1", false, ImagemEstado1);
+	ponteiro Q2 = criaEstado("Q2", false, ImagemEstado2);
+	ponteiro Q3 = criaEstado("Q3", false, ImagemEstado3);
+	ponteiro Q4 = criaEstado("Q4", false, ImagemEstado4);
+	ponteiro Q5 = criaEstado("Q5", false, ImagemEstado5);
+	ponteiro Q6 = criaEstado("Q6", true, ImagemEstado6);
+
+	Q0->imagemInicial = ImagemInicial;
+
+	Q0->transicoes[0].simboloAceito = 'p';
+	Q0->transicoes[0].link = Q1;
+
+	Q1->transicoes[0].simboloAceito = 'r';
+	Q1->transicoes[0].link = Q2;
+
+	Q2->transicoes[0].simboloAceito = 'i';
+	Q2->transicoes[0].link = Q3;
+
+	Q3->transicoes[0].simboloAceito = 'n';
+	Q3->transicoes[0].link = Q4;
+
+	Q4->transicoes[0].simboloAceito = 't';
+	Q4->transicoes[0].link = Q5;
+
+	Q5->transicoes[0].simboloAceito = 'f';
+	Q5->transicoes[0].link = Q6;
+
+	return  Q0;
+}
+

@@ -78,6 +78,7 @@ namespace AS {
 	private: System::Windows::Forms::Button^  proximo;
 
 	private: System::Windows::Forms::PictureBox^  resultado;
+	private: System::Windows::Forms::Button^  button4;
 
 			 bool retaguarda = false;
 
@@ -98,6 +99,7 @@ namespace AS {
 			this->novoTeste = (gcnew System::Windows::Forms::Button());
 			this->proximo = (gcnew System::Windows::Forms::Button());
 			this->resultado = (gcnew System::Windows::Forms::PictureBox());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->boxImagemPorta))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->boxAutomato))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->resultado))->BeginInit();
@@ -229,6 +231,21 @@ namespace AS {
 			this->resultado->TabIndex = 11;
 			this->resultado->TabStop = false;
 			// 
+			// button4
+			// 
+			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button4->BackColor = System::Drawing::Color::White;
+			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold));
+			this->button4->ForeColor = System::Drawing::Color::MediumSeaGreen;
+			this->button4->Location = System::Drawing::Point(23, 564);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(140, 45);
+			this->button4->TabIndex = 12;
+			this->button4->Text = L"Voltar";
+			this->button4->UseVisualStyleBackColor = false;
+			this->button4->Click += gcnew System::EventHandler(this, &TesteAutomatoPorta::button4_Click);
+			// 
 			// TesteAutomatoPorta
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -236,6 +253,7 @@ namespace AS {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(932, 621);
+			this->Controls->Add(this->button4);
 			this->Controls->Add(this->resultado);
 			this->Controls->Add(this->novoTeste);
 			this->Controls->Add(this->proximo);
@@ -358,6 +376,10 @@ private: System::Void novoTeste_Click(System::Object^  sender, System::EventArgs
 			 proximo->Enabled = false;
 			 button2->Enabled = true;
 			 button1->Enabled = true;
+}
+private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Status = 0;
+			 this->Visible = false;
 }
 };
 }

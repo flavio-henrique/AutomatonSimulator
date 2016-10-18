@@ -190,7 +190,7 @@ namespace AS {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::Color::Black;
-			this->button2->Location = System::Drawing::Point(167, 458);
+			this->button2->Location = System::Drawing::Point(167, 480);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(99, 55);
 			this->button2->TabIndex = 6;
@@ -207,7 +207,7 @@ namespace AS {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button3->ForeColor = System::Drawing::Color::Black;
-			this->button3->Location = System::Drawing::Point(45, 458);
+			this->button3->Location = System::Drawing::Point(40, 480);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(104, 55);
 			this->button3->TabIndex = 7;
@@ -261,7 +261,7 @@ namespace AS {
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold));
 			this->button4->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button4->Location = System::Drawing::Point(72, 506);
+			this->button4->Location = System::Drawing::Point(65, 554);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(140, 45);
 			this->button4->TabIndex = 11;

@@ -31,6 +31,7 @@ public:
 	ponteiro criaEstado(string, bool, string);
 	ponteiro automato2();
 	ponteiro automato3();
+	ponteiro automato4();
 	string getDiretorio();
 	
 };

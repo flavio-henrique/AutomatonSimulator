@@ -59,7 +59,13 @@ void TesteAutomatoForm::setAF(int op){
 		af = AF.automato2();
 		setImagemEstado(af->imagemInicial);
 		break;
+	case 4:
+		af = AF.automato4();
+		setImagemEstado(af->imagemInicial);
+		break;
 	}
+	
+
 }
 
 void TesteAutomatoForm::sleepcp(int milliseconds) // cross-platform sleep function

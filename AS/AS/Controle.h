@@ -12,6 +12,7 @@ using namespace std;
 #include "Automato.h"
 #include "SobreAs.h"
 #include "TesteAutomatoPorta.h"
+#include "SobreAutomato4.h"
 
 using namespace System;
 using namespace System::Windows::Forms;

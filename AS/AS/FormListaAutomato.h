@@ -50,6 +50,7 @@ namespace AS {
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Button^  button4;
 	private: System::Windows::Forms::Button^  button5;
+	private: System::Windows::Forms::Button^  button6;
 
 			 int Status;
 #pragma region Windows Form Designer generated code
@@ -66,6 +67,7 @@ namespace AS {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -105,7 +107,7 @@ namespace AS {
 			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->button3->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button3->Location = System::Drawing::Point(272, 327);
+			this->button3->Location = System::Drawing::Point(272, 332);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(332, 45);
 			this->button3->TabIndex = 2;
@@ -149,13 +151,28 @@ namespace AS {
 			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->button5->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button5->Location = System::Drawing::Point(272, 394);
+			this->button5->Location = System::Drawing::Point(272, 398);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(332, 45);
 			this->button5->TabIndex = 7;
 			this->button5->Text = L"Automato Linguagem Formal";
 			this->button5->UseVisualStyleBackColor = false;
 			this->button5->Click += gcnew System::EventHandler(this, &FormListaAutomato::button5_Click);
+			// 
+			// button6
+			// 
+			this->button6->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->button6->BackColor = System::Drawing::Color::White;
+			this->button6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
+			this->button6->ForeColor = System::Drawing::Color::MediumSeaGreen;
+			this->button6->Location = System::Drawing::Point(272, 464);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(332, 45);
+			this->button6->TabIndex = 8;
+			this->button6->Text = L"Automato Mundo Real";
+			this->button6->UseVisualStyleBackColor = false;
+			this->button6->Click += gcnew System::EventHandler(this, &FormListaAutomato::button6_Click);
 			// 
 			// FormListaAutomato
 			// 
@@ -164,6 +181,7 @@ namespace AS {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(854, 549);
+			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->label2);
@@ -204,6 +222,10 @@ namespace AS {
     }
 private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Status = 4;
+			 this->Visible = false;
+}
+private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Status = 5;
 			 this->Visible = false;
 }
 };

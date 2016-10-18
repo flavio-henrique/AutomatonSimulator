@@ -96,6 +96,22 @@ void Controle::controlarExecucao(void){
 					}
 					sobreAF1.setStatus(-1);
 					break;
+				case 5:
+					while (sobreAF1.getStatus() != 0){
+						sobreAF1.ShowDialog();
+						switch (sobreAF1.getStatus()){
+						case 1:
+							AS::TesteAutomatoTorneira testeATorneira;
+							while (testeATorneira.getStatus() != 0){
+								testeATorneira.setStatus(1);
+								testeATorneira.ShowDialog();
+							}
+							testeATorneira.setStatus(-1);
+							break;
+						}
+					}
+					sobreAF1.setStatus(-1);
+					break;
 				}
 			}
 			listaAutomato.setStatus(-1);

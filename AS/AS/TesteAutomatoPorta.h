@@ -110,12 +110,12 @@ namespace AS {
 			this->label1->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::Transparent;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Gudea", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::MediumSeaGreen;
 			this->label1->Location = System::Drawing::Point(245, 63);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(478, 43);
+			this->label1->Size = System::Drawing::Size(481, 39);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Automato da porta automática";
 			// 
@@ -124,7 +124,7 @@ namespace AS {
 			this->boxImagemPorta->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->boxImagemPorta->BackColor = System::Drawing::Color::Transparent;
 			this->boxImagemPorta->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"boxImagemPorta.Image")));
-			this->boxImagemPorta->Location = System::Drawing::Point(12, 157);
+			this->boxImagemPorta->Location = System::Drawing::Point(12, 169);
 			this->boxImagemPorta->Name = L"boxImagemPorta";
 			this->boxImagemPorta->Size = System::Drawing::Size(468, 241);
 			this->boxImagemPorta->TabIndex = 1;
@@ -137,7 +137,7 @@ namespace AS {
 			this->button1->FlatAppearance->BorderSize = 0;
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.25F));
-			this->button1->Location = System::Drawing::Point(60, 421);
+			this->button1->Location = System::Drawing::Point(60, 433);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(112, 52);
 			this->button1->TabIndex = 2;
@@ -152,7 +152,7 @@ namespace AS {
 			this->button2->FlatAppearance->BorderSize = 0;
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.25F));
-			this->button2->Location = System::Drawing::Point(184, 421);
+			this->button2->Location = System::Drawing::Point(184, 433);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(115, 52);
 			this->button2->TabIndex = 3;
@@ -167,7 +167,7 @@ namespace AS {
 			this->enviar->FlatAppearance->BorderSize = 0;
 			this->enviar->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->enviar->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.25F));
-			this->enviar->Location = System::Drawing::Point(95, 479);
+			this->enviar->Location = System::Drawing::Point(95, 491);
 			this->enviar->Name = L"enviar";
 			this->enviar->Size = System::Drawing::Size(189, 43);
 			this->enviar->TabIndex = 4;
@@ -180,7 +180,7 @@ namespace AS {
 			this->boxAutomato->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->boxAutomato->BackColor = System::Drawing::Color::Transparent;
 			this->boxAutomato->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"boxAutomato.Image")));
-			this->boxAutomato->Location = System::Drawing::Point(486, 157);
+			this->boxAutomato->Location = System::Drawing::Point(486, 169);
 			this->boxAutomato->Name = L"boxAutomato";
 			this->boxAutomato->Size = System::Drawing::Size(398, 286);
 			this->boxAutomato->TabIndex = 6;
@@ -192,10 +192,10 @@ namespace AS {
 			this->novoTeste->BackColor = System::Drawing::Color::SpringGreen;
 			this->novoTeste->FlatAppearance->BorderSize = 0;
 			this->novoTeste->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->novoTeste->Font = (gcnew System::Drawing::Font(L"Gudea", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->novoTeste->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->novoTeste->ForeColor = System::Drawing::Color::Black;
-			this->novoTeste->Location = System::Drawing::Point(498, 407);
+			this->novoTeste->Location = System::Drawing::Point(498, 419);
 			this->novoTeste->Name = L"novoTeste";
 			this->novoTeste->Size = System::Drawing::Size(104, 45);
 			this->novoTeste->TabIndex = 9;
@@ -209,10 +209,10 @@ namespace AS {
 			this->proximo->BackColor = System::Drawing::Color::SpringGreen;
 			this->proximo->FlatAppearance->BorderSize = 0;
 			this->proximo->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->proximo->Font = (gcnew System::Drawing::Font(L"Gudea", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->proximo->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->proximo->ForeColor = System::Drawing::Color::Black;
-			this->proximo->Location = System::Drawing::Point(608, 407);
+			this->proximo->Location = System::Drawing::Point(608, 419);
 			this->proximo->Name = L"proximo";
 			this->proximo->Size = System::Drawing::Size(99, 45);
 			this->proximo->TabIndex = 8;
@@ -225,7 +225,7 @@ namespace AS {
 			this->resultado->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->resultado->BackColor = System::Drawing::Color::Transparent;
 			this->resultado->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"resultado.Image")));
-			this->resultado->Location = System::Drawing::Point(544, 503);
+			this->resultado->Location = System::Drawing::Point(544, 515);
 			this->resultado->Name = L"resultado";
 			this->resultado->Size = System::Drawing::Size(267, 74);
 			this->resultado->TabIndex = 11;
@@ -269,6 +269,7 @@ namespace AS {
 			this->Text = L"TesteAutomatoPorta";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->FormClosed += gcnew System::Windows::Forms::FormClosedEventHandler(this, &TesteAutomatoPorta::TesteAutomatoPorta_FormClosed);
+			this->Load += gcnew System::EventHandler(this, &TesteAutomatoPorta::TesteAutomatoPorta_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->boxImagemPorta))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->boxAutomato))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->resultado))->EndInit();
@@ -380,6 +381,8 @@ private: System::Void novoTeste_Click(System::Object^  sender, System::EventArgs
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Status = 0;
 			 this->Visible = false;
+}
+private: System::Void TesteAutomatoPorta_Load(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }

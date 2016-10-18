@@ -32,6 +32,7 @@ public:
 	ponteiro automato2();
 	ponteiro automato3();
 	ponteiro automato4();
+	ponteiro automato5();
 	string getDiretorio();
 	
 };

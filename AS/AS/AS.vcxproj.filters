@@ -42,6 +42,9 @@
     <ClCompile Include="TesteAutomatoPorta.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TesteAutomatoTorneira.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Controle.h">
@@ -68,6 +71,9 @@
     <ClInclude Include="TesteAutomatoPorta.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TesteAutomatoTorneira.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FormListaAutomato.resx">
@@ -83,6 +89,9 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="SobreAutomato1Form.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TesteAutomatoPorta.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

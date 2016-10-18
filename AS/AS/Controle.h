@@ -13,6 +13,8 @@ using namespace std;
 #include "SobreAs.h"
 #include "TesteAutomatoPorta.h"
 #include "TesteAutomatoTorneira.h"
+#include "SobreAutomato4.h"
+
 
 using namespace System;
 using namespace System::Windows::Forms;

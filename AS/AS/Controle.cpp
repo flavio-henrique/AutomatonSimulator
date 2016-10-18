@@ -14,6 +14,7 @@ void Controle::controlarExecucao(void){
 	AS::SobreAs sobre;
 	Automato automato;
 	AS::SobreAutomato1Form sobreAF1;
+	AS::SobreAutomato4 sobreAF4;
 
 	bool Resultado;
 
@@ -80,10 +81,10 @@ void Controle::controlarExecucao(void){
 					break;
 				case 4:
 
-					while (sobreAF1.getStatus() != 0){
-						sobreAF1.ShowDialog();
+					while (sobreAF4.getStatus() != 0){
+						sobreAF4.ShowDialog();
 
-						switch (sobreAF1.getStatus()){
+						switch (sobreAF4.getStatus()){
 						case 1:
 							AS::TesteAutomatoForm teste(4);
 							while (teste.getStatus() != 0){
@@ -94,7 +95,7 @@ void Controle::controlarExecucao(void){
 							break;
 						}
 					}
-					sobreAF1.setStatus(-1);
+					sobreAF4.setStatus(-1);
 					break;
 				case 5:
 					while (sobreAF1.getStatus() != 0){

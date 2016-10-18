@@ -42,7 +42,11 @@
     <ClCompile Include="TesteAutomatoPorta.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="TesteAutomatoTorneira.cpp">
+=======
+    <ClCompile Include="SobreAutomato4.cpp">
+>>>>>>> 81cb9923b699ecbb4fcaac6b89956f0bfde51d60
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,7 +75,11 @@
     <ClInclude Include="TesteAutomatoPorta.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="TesteAutomatoTorneira.h">
+=======
+    <ClInclude Include="SobreAutomato4.h">
+>>>>>>> 81cb9923b699ecbb4fcaac6b89956f0bfde51d60
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

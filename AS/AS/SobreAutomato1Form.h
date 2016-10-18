@@ -99,6 +99,7 @@ namespace AS {
 			this->label2->Size = System::Drawing::Size(295, 39);
 			this->label2->TabIndex = 5;
 			this->label2->Text = L"Sobre o Autômato";
+			this->label2->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::label2_Click);
 			// 
 			// pictureBox1
 			// 
@@ -110,6 +111,7 @@ namespace AS {
 			this->pictureBox1->Size = System::Drawing::Size(480, 276);
 			this->pictureBox1->TabIndex = 6;
 			this->pictureBox1->TabStop = false;
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::pictureBox1_Click);
 			// 
 			// label1
 			// 
@@ -123,6 +125,7 @@ namespace AS {
 			this->label1->Size = System::Drawing::Size(206, 22);
 			this->label1->TabIndex = 9;
 			this->label1->Text = L"Objetivo deste Autômato";
+			this->label1->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::label1_Click);
 			// 
 			// label3
 			// 
@@ -136,6 +139,7 @@ namespace AS {
 			this->label3->Size = System::Drawing::Size(192, 22);
 			this->label3->TabIndex = 10;
 			this->label3->Text = L"Palavras reconhecidas";
+			this->label3->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::label3_Click);
 			// 
 			// label4
 			// 
@@ -149,6 +153,7 @@ namespace AS {
 			this->label4->Size = System::Drawing::Size(27, 20);
 			this->label4->TabIndex = 11;
 			this->label4->Text = L"ab";
+			this->label4->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::label4_Click);
 			// 
 			// label5
 			// 
@@ -162,6 +167,7 @@ namespace AS {
 			this->label5->Size = System::Drawing::Size(63, 20);
 			this->label5->TabIndex = 12;
 			this->label5->Text = L"aaabbb";
+			this->label5->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::label5_Click);
 			// 
 			// label6
 			// 
@@ -175,6 +181,7 @@ namespace AS {
 			this->label6->Size = System::Drawing::Size(99, 20);
 			this->label6->TabIndex = 13;
 			this->label6->Text = L"aaaaabbbbb";
+			this->label6->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::label6_Click);
 			// 
 			// label7
 			// 
@@ -188,6 +195,7 @@ namespace AS {
 			this->label7->Size = System::Drawing::Size(45, 20);
 			this->label7->TabIndex = 14;
 			this->label7->Text = L"abbb";
+			this->label7->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::label7_Click);
 			// 
 			// label8
 			// 
@@ -201,6 +209,7 @@ namespace AS {
 			this->label8->Size = System::Drawing::Size(81, 20);
 			this->label8->TabIndex = 15;
 			this->label8->Text = L"aaaaabbb";
+			this->label8->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::label8_Click);
 			// 
 			// label9
 			// 
@@ -214,6 +223,7 @@ namespace AS {
 			this->label9->Size = System::Drawing::Size(63, 20);
 			this->label9->TabIndex = 16;
 			this->label9->Text = L"abbbbb";
+			this->label9->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::label9_Click);
 			// 
 			// button1
 			// 
@@ -240,6 +250,7 @@ namespace AS {
 			this->pictureBox2->Size = System::Drawing::Size(343, 100);
 			this->pictureBox2->TabIndex = 18;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::pictureBox2_Click);
 			// 
 			// button4
 			// 
@@ -299,6 +310,28 @@ private: System::Void SobreAutomato1Form_FormClosed(System::Object^  sender, Sys
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Status = 0;
 			 this->Visible = false;
+}
+private: System::Void pictureBox2_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label9_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label8_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label7_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label6_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label5_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label4_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label3_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void pictureBox1_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void label2_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }

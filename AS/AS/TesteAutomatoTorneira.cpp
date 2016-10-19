@@ -44,10 +44,10 @@ void TesteAutomatoTorneira::setImagemResultado(string caminho){
 string TesteAutomatoTorneira::getPalavra(){
 	string palavra;
 	if (acionado){
-		palavra = "b";
+		palavra = "a";
 	}
 	else{
-		palavra = "a";
+		palavra = "b";
 	}
 	return palavra;
 }

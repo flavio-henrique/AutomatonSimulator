@@ -268,14 +268,14 @@ namespace AS {
 				 Automato AF;
 
 				
-				 if (acionado){
+				 if (!acionado){
 					 setImagemTorneira(AF.getDiretorio() + "images/automatoTorneira/torneiraFechadaComMao.png");
-					 acionado = false;
+					 acionado = true;
 				 }
-				 else if (!acionado)
+				 else if (acionado)
 				 {
 					 setImagemTorneira(AF.getDiretorio() + "images/automatoTorneira/torneiraFechadaSemMao.png");
-					 acionado = true;
+					 acionado = false;
 				 }
 				 
 	}
@@ -320,16 +320,16 @@ private: System::Void proximo_Click(System::Object^  sender, System::EventArgs^ 
 					 break;
 				 }
 			 }
-			 if (rejeita || afAux->isFinal == true){
+			 if (rejeita || afAux->isFinal == false){
 				 
-				 setImagemTorneira(automato.getDiretorio() + "images/automatoTorneira/torneiraAbertacomMao.png");
-				 setImagemResultado(automato.getDiretorio() + "images/automatoPorta/resultadoAberto.png");
-				 proximo->Enabled = false;
-			 }
-			 if (afAux->isFinal == false){
-
 				 setImagemTorneira(automato.getDiretorio() + "images/automatoTorneira/torneiraFechadaSemMao.png");
 				 setImagemResultado(automato.getDiretorio() + "images/automatoPorta/resultadoFechado.png");
+				 proximo->Enabled = false;
+			 }
+			 if (afAux->isFinal == true){
+
+				 setImagemTorneira(automato.getDiretorio() + "images/automatoTorneira/torneiraAbertaComMao.png");
+				 setImagemResultado(automato.getDiretorio() + "images/automatoPorta/resultadoAberto.png");
 				 proximo->Enabled = false;
 			 }
 }

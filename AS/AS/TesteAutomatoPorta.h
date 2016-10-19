@@ -31,6 +31,8 @@ namespace AS {
 			unsetImagemResultado();
 			novoTeste->Enabled = false;
 			proximo->Enabled = false;
+			frente = false;
+			retaguarda = false;
 		}
 		int getStatus();
 		void setStatus(int);
@@ -70,9 +72,11 @@ namespace AS {
 		
 		System::ComponentModel::Container ^components;
 		int Status;
-		bool frente = false;
+		bool frente;
+		bool retaguarda;
 		ponteiro af;
 		ponteiro afAux;
+		
 
 	private: System::Windows::Forms::Button^  novoTeste;
 	private: System::Windows::Forms::Button^  proximo;
@@ -80,7 +84,7 @@ namespace AS {
 	private: System::Windows::Forms::PictureBox^  resultado;
 	private: System::Windows::Forms::Button^  button4;
 
-			 bool retaguarda = false;
+			 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -377,6 +381,8 @@ private: System::Void novoTeste_Click(System::Object^  sender, System::EventArgs
 			 proximo->Enabled = false;
 			 button2->Enabled = true;
 			 button1->Enabled = true;
+			 frente = false;
+			 retaguarda = false;
 }
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Status = 0;

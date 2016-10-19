@@ -29,6 +29,7 @@ namespace AS {
 			unsetImagemResultado();
 			novoTeste->Enabled = false;
 			proximo->Enabled = false;
+			acionado = true;
 		}
 		int getStatus();
 		void setStatus(int);
@@ -280,6 +281,7 @@ namespace AS {
 				 
 	}
 private: System::Void enviar_Click(System::Object^  sender, System::EventArgs^  e) {
+
 			 afAux = af;
 			 setImagemEstado(afAux->imagem);
 
@@ -301,6 +303,7 @@ private: System::Void novoTeste_Click(System::Object^  sender, System::EventArgs
 			 enviar->Enabled = true;
 			 proximo->Enabled = false;
 			 button2->Enabled = true;
+			 acionado = true;
 			 
 }
 private: System::Void proximo_Click(System::Object^  sender, System::EventArgs^  e) {

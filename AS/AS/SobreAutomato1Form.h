@@ -59,6 +59,12 @@ namespace AS {
 		int op;
 	private: System::Windows::Forms::PictureBox^  pictureBox2;
 	private: System::Windows::Forms::Button^  button4;
+	private: System::Windows::Forms::Label^  label10;
+	private: System::Windows::Forms::Label^  label11;
+	private: System::Windows::Forms::Label^  label12;
+	private: System::Windows::Forms::Label^  label13;
+	private: System::Windows::Forms::Label^  label14;
+	private: System::Windows::Forms::Label^  label15;
 			 System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -82,6 +88,12 @@ namespace AS {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->label15 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -93,8 +105,8 @@ namespace AS {
 			this->label2->BackColor = System::Drawing::Color::Transparent;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->label2->Location = System::Drawing::Point(282, 42);
+			this->label2->ForeColor = System::Drawing::Color::Lime;
+			this->label2->Location = System::Drawing::Point(489, 71);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(295, 39);
 			this->label2->TabIndex = 5;
@@ -106,7 +118,7 @@ namespace AS {
 			this->pictureBox1->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-1, 110);
+			this->pictureBox1->Location = System::Drawing::Point(164, 155);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(480, 276);
 			this->pictureBox1->TabIndex = 6;
@@ -119,8 +131,8 @@ namespace AS {
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::Transparent;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.25F));
-			this->label1->ForeColor = System::Drawing::Color::SkyBlue;
-			this->label1->Location = System::Drawing::Point(583, 110);
+			this->label1->ForeColor = System::Drawing::Color::Lime;
+			this->label1->Location = System::Drawing::Point(853, 156);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(206, 22);
 			this->label1->TabIndex = 9;
@@ -133,8 +145,8 @@ namespace AS {
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::Transparent;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.25F));
-			this->label3->ForeColor = System::Drawing::Color::SkyBlue;
-			this->label3->Location = System::Drawing::Point(583, 269);
+			this->label3->ForeColor = System::Drawing::Color::Lime;
+			this->label3->Location = System::Drawing::Point(853, 316);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(192, 22);
 			this->label3->TabIndex = 10;
@@ -148,7 +160,7 @@ namespace AS {
 			this->label4->BackColor = System::Drawing::Color::Transparent;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->label4->ForeColor = System::Drawing::Color::White;
-			this->label4->Location = System::Drawing::Point(514, 306);
+			this->label4->Location = System::Drawing::Point(802, 368);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(27, 20);
 			this->label4->TabIndex = 11;
@@ -162,7 +174,7 @@ namespace AS {
 			this->label5->BackColor = System::Drawing::Color::Transparent;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->label5->ForeColor = System::Drawing::Color::White;
-			this->label5->Location = System::Drawing::Point(514, 326);
+			this->label5->Location = System::Drawing::Point(802, 388);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(63, 20);
 			this->label5->TabIndex = 12;
@@ -176,7 +188,7 @@ namespace AS {
 			this->label6->BackColor = System::Drawing::Color::Transparent;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->label6->ForeColor = System::Drawing::Color::White;
-			this->label6->Location = System::Drawing::Point(514, 346);
+			this->label6->Location = System::Drawing::Point(802, 408);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(99, 20);
 			this->label6->TabIndex = 13;
@@ -190,7 +202,7 @@ namespace AS {
 			this->label7->BackColor = System::Drawing::Color::Transparent;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->label7->ForeColor = System::Drawing::Color::White;
-			this->label7->Location = System::Drawing::Point(514, 366);
+			this->label7->Location = System::Drawing::Point(802, 428);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(45, 20);
 			this->label7->TabIndex = 14;
@@ -204,7 +216,7 @@ namespace AS {
 			this->label8->BackColor = System::Drawing::Color::Transparent;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->label8->ForeColor = System::Drawing::Color::White;
-			this->label8->Location = System::Drawing::Point(514, 406);
+			this->label8->Location = System::Drawing::Point(802, 468);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(81, 20);
 			this->label8->TabIndex = 15;
@@ -218,7 +230,7 @@ namespace AS {
 			this->label9->BackColor = System::Drawing::Color::Transparent;
 			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
 			this->label9->ForeColor = System::Drawing::Color::White;
-			this->label9->Location = System::Drawing::Point(514, 386);
+			this->label9->Location = System::Drawing::Point(802, 448);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(63, 20);
 			this->label9->TabIndex = 16;
@@ -228,11 +240,12 @@ namespace AS {
 			// button1
 			// 
 			this->button1->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->button1->BackColor = System::Drawing::Color::SpringGreen;
+			this->button1->BackColor = System::Drawing::Color::Lime;
 			this->button1->FlatAppearance->BorderSize = 0;
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.25F));
-			this->button1->Location = System::Drawing::Point(73, 415);
+			this->button1->ForeColor = System::Drawing::Color::White;
+			this->button1->Location = System::Drawing::Point(276, 424);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(306, 58);
 			this->button1->TabIndex = 17;
@@ -245,7 +258,7 @@ namespace AS {
 			this->pictureBox2->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->pictureBox2->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(499, 147);
+			this->pictureBox2->Location = System::Drawing::Point(796, 212);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(343, 100);
 			this->pictureBox2->TabIndex = 18;
@@ -259,8 +272,8 @@ namespace AS {
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button4->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button4->Location = System::Drawing::Point(73, 479);
+			this->button4->ForeColor = System::Drawing::Color::Lime;
+			this->button4->Location = System::Drawing::Point(111, 485);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(140, 45);
 			this->button4->TabIndex = 19;
@@ -268,13 +281,97 @@ namespace AS {
 			this->button4->UseVisualStyleBackColor = false;
 			this->button4->Click += gcnew System::EventHandler(this, &SobreAutomato1Form::button4_Click);
 			// 
+			// label10
+			// 
+			this->label10->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->label10->AutoSize = true;
+			this->label10->BackColor = System::Drawing::Color::Transparent;
+			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.25F));
+			this->label10->ForeColor = System::Drawing::Color::Lime;
+			this->label10->Location = System::Drawing::Point(853, 503);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(227, 22);
+			this->label10->TabIndex = 20;
+			this->label10->Text = L"Palavras não reconhecidas";
+			// 
+			// label11
+			// 
+			this->label11->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->label11->AutoSize = true;
+			this->label11->BackColor = System::Drawing::Color::Transparent;
+			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
+			this->label11->ForeColor = System::Drawing::Color::White;
+			this->label11->Location = System::Drawing::Point(804, 631);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(99, 20);
+			this->label11->TabIndex = 25;
+			this->label11->Text = L"aaaabbbbbb";
+			// 
+			// label12
+			// 
+			this->label12->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->label12->AutoSize = true;
+			this->label12->BackColor = System::Drawing::Color::Transparent;
+			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
+			this->label12->ForeColor = System::Drawing::Color::White;
+			this->label12->Location = System::Drawing::Point(804, 571);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(54, 20);
+			this->label12->TabIndex = 24;
+			this->label12->Text = L"aabbb";
+			// 
+			// label13
+			// 
+			this->label13->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->label13->AutoSize = true;
+			this->label13->BackColor = System::Drawing::Color::Transparent;
+			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
+			this->label13->ForeColor = System::Drawing::Color::White;
+			this->label13->Location = System::Drawing::Point(804, 611);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(81, 20);
+			this->label13->TabIndex = 23;
+			this->label13->Text = L"bbbbaaaa";
+			// 
+			// label14
+			// 
+			this->label14->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->label14->AutoSize = true;
+			this->label14->BackColor = System::Drawing::Color::Transparent;
+			this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
+			this->label14->ForeColor = System::Drawing::Color::White;
+			this->label14->Location = System::Drawing::Point(804, 591);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(63, 20);
+			this->label14->TabIndex = 22;
+			this->label14->Text = L"bbbaaa";
+			// 
+			// label15
+			// 
+			this->label15->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->label15->AutoSize = true;
+			this->label15->BackColor = System::Drawing::Color::Transparent;
+			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
+			this->label15->ForeColor = System::Drawing::Color::White;
+			this->label15->Location = System::Drawing::Point(804, 551);
+			this->label15->Name = L"label15";
+			this->label15->Size = System::Drawing::Size(27, 20);
+			this->label15->TabIndex = 21;
+			this->label15->Text = L"ba";
+			// 
 			// SobreAutomato1Form
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(854, 565);
+			this->ClientSize = System::Drawing::Size(1196, 613);
+			this->Controls->Add(this->label11);
+			this->Controls->Add(this->label12);
+			this->Controls->Add(this->label13);
+			this->Controls->Add(this->label14);
+			this->Controls->Add(this->label15);
+			this->Controls->Add(this->label10);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button1);

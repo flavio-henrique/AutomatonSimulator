@@ -14,6 +14,10 @@ using namespace std;
 #include "TesteAutomatoPorta.h"
 #include "TesteAutomatoTorneira.h"
 #include "SobreAutomato4.h"
+#include "SobreAutomato2Form.h"
+#include "SobreAutomato3Form.h"
+#include "SobreAutomato5Form.h"
+
 
 
 using namespace System;

@@ -1,106 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClCompile Include="Automato.cpp" />
+    <ClCompile Include="Controle.cpp" />
+    <ClCompile Include="FormListaAutomato.cpp" />
+    <ClCompile Include="MenuAS.cpp" />
+    <ClCompile Include="Principal.cpp" />
+    <ClCompile Include="SobreAs.cpp" />
+    <ClCompile Include="SobreAutomato1Form.cpp" />
+    <ClCompile Include="SobreAutomato4.cpp" />
+    <ClCompile Include="TesteAutomatoForm.cpp" />
+    <ClCompile Include="TesteAutomatoPorta.cpp" />
+    <ClCompile Include="TesteAutomatoTorneira.cpp" />
+    <ClCompile Include="SobreAutomato2Form.cpp" />
+    <ClCompile Include="SobreAutomato3Form.cpp" />
+    <ClCompile Include="SobreAutomato5Form.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Principal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Controle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuAS.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FormListaAutomato.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Automato.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TesteAutomatoForm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SobreAs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SobreAutomato1Form.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TesteAutomatoPorta.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="TesteAutomatoTorneira.cpp">
-=======
-    <ClCompile Include="SobreAutomato4.cpp">
->>>>>>> 81cb9923b699ecbb4fcaac6b89956f0bfde51d60
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="Automato.h" />
+    <ClInclude Include="Controle.h" />
+    <ClInclude Include="FormListaAutomato.h" />
+    <ClInclude Include="MenuAS.h" />
+    <ClInclude Include="SobreAs.h" />
+    <ClInclude Include="SobreAutomato1Form.h" />
+    <ClInclude Include="SobreAutomato4.h" />
+    <ClInclude Include="TesteAutomatoForm.h" />
+    <ClInclude Include="TesteAutomatoPorta.h" />
+    <ClInclude Include="TesteAutomatoTorneira.h" />
+    <ClInclude Include="SobreAutomato2Form.h" />
+    <ClInclude Include="SobreAutomato3Form.h" />
+    <ClInclude Include="SobreAutomato5Form.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Controle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuAS.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FormListaAutomato.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Automato.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TesteAutomatoForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SobreAs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SobreAutomato1Form.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TesteAutomatoPorta.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="TesteAutomatoTorneira.h">
-=======
-    <ClInclude Include="SobreAutomato4.h">
->>>>>>> 81cb9923b699ecbb4fcaac6b89956f0bfde51d60
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="FormListaAutomato.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuAS.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TesteAutomatoForm.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SobreAs.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SobreAutomato1Form.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TesteAutomatoPorta.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaAutomato.resx" />
+    <EmbeddedResource Include="MenuAS.resx" />
+    <EmbeddedResource Include="SobreAs.resx" />
+    <EmbeddedResource Include="SobreAutomato1Form.resx" />
+    <EmbeddedResource Include="SobreAutomato4.resx" />
+    <EmbeddedResource Include="TesteAutomatoForm.resx" />
+    <EmbeddedResource Include="TesteAutomatoPorta.resx" />
+    <EmbeddedResource Include="TesteAutomatoTorneira.resx" />
   </ItemGroup>
 </Project>

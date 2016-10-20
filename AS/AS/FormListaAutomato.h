@@ -73,45 +73,49 @@ namespace AS {
 			// button1
 			// 
 			this->button1->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->button1->BackColor = System::Drawing::Color::White;
+			this->button1->BackColor = System::Drawing::Color::Lime;
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
-			this->button1->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button1->Location = System::Drawing::Point(272, 200);
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->ForeColor = System::Drawing::Color::White;
+			this->button1->Location = System::Drawing::Point(181, 179);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(332, 45);
+			this->button1->Size = System::Drawing::Size(542, 83);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"Autômato Linguagem Formal";
+			this->button1->Text = L"Reconhecer uma linguagem tal que a palavra seja dividida em duas subpalavras e co"
+				L"ntenha números ímpares de \'a\' e \'b\'";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &FormListaAutomato::button1_Click);
 			// 
 			// button2
 			// 
 			this->button2->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->button2->BackColor = System::Drawing::Color::White;
+			this->button2->BackColor = System::Drawing::Color::Lime;
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
-			this->button2->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button2->Location = System::Drawing::Point(272, 266);
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button2->ForeColor = System::Drawing::Color::White;
+			this->button2->Location = System::Drawing::Point(181, 278);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(332, 45);
+			this->button2->Size = System::Drawing::Size(542, 83);
 			this->button2->TabIndex = 1;
-			this->button2->Text = L"Automato Linguagem Formal";
+			this->button2->Text = L"Reconhecer uma linguagem tal que o sufixo da palavra seja \'aa\'";
 			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &FormListaAutomato::button2_Click);
 			// 
 			// button3
 			// 
 			this->button3->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->button3->BackColor = System::Drawing::Color::White;
+			this->button3->BackColor = System::Drawing::Color::Lime;
 			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
-			this->button3->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button3->Location = System::Drawing::Point(272, 332);
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button3->ForeColor = System::Drawing::Color::White;
+			this->button3->Location = System::Drawing::Point(181, 375);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(332, 45);
+			this->button3->Size = System::Drawing::Size(542, 83);
 			this->button3->TabIndex = 2;
-			this->button3->Text = L"Automato Mundo Real";
+			this->button3->Text = L"Mundo Real - Porta automática";
 			this->button3->UseVisualStyleBackColor = false;
 			this->button3->Click += gcnew System::EventHandler(this, &FormListaAutomato::button3_Click);
 			// 
@@ -120,14 +124,14 @@ namespace AS {
 			this->label2->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::Transparent;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 36, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 39, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->label2->Location = System::Drawing::Point(119, 89);
+			this->label2->ForeColor = System::Drawing::Color::Lime;
+			this->label2->Location = System::Drawing::Point(-62, 66);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(588, 55);
+			this->label2->Size = System::Drawing::Size(989, 59);
 			this->label2->TabIndex = 5;
-			this->label2->Text = L"Lista de Autômatos Finitos";
+			this->label2->Text = L"Lista de Autômatos Finitos  Determinístico";
 			// 
 			// button4
 			// 
@@ -135,8 +139,8 @@ namespace AS {
 			this->button4->BackColor = System::Drawing::Color::White;
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold));
-			this->button4->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button4->Location = System::Drawing::Point(109, 478);
+			this->button4->ForeColor = System::Drawing::Color::Lime;
+			this->button4->Location = System::Drawing::Point(85, 609);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(140, 45);
 			this->button4->TabIndex = 6;
@@ -147,30 +151,32 @@ namespace AS {
 			// button5
 			// 
 			this->button5->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->button5->BackColor = System::Drawing::Color::White;
+			this->button5->BackColor = System::Drawing::Color::Lime;
 			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
-			this->button5->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button5->Location = System::Drawing::Point(272, 398);
+			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button5->ForeColor = System::Drawing::Color::White;
+			this->button5->Location = System::Drawing::Point(181, 472);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(332, 45);
+			this->button5->Size = System::Drawing::Size(542, 83);
 			this->button5->TabIndex = 7;
-			this->button5->Text = L"Automato Linguagem Formal";
+			this->button5->Text = L"Reconhecer uma linguagem tal que a palavra seja \'printf\"";
 			this->button5->UseVisualStyleBackColor = false;
 			this->button5->Click += gcnew System::EventHandler(this, &FormListaAutomato::button5_Click);
 			// 
 			// button6
 			// 
 			this->button6->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->button6->BackColor = System::Drawing::Color::White;
+			this->button6->BackColor = System::Drawing::Color::Lime;
 			this->button6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
-			this->button6->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button6->Location = System::Drawing::Point(272, 464);
+			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button6->ForeColor = System::Drawing::Color::White;
+			this->button6->Location = System::Drawing::Point(181, 569);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(332, 45);
+			this->button6->Size = System::Drawing::Size(542, 83);
 			this->button6->TabIndex = 8;
-			this->button6->Text = L"Automato Mundo Real";
+			this->button6->Text = L"Mundo Real - Torneira com sonsor";
 			this->button6->UseVisualStyleBackColor = false;
 			this->button6->Click += gcnew System::EventHandler(this, &FormListaAutomato::button6_Click);
 			// 
@@ -180,7 +186,7 @@ namespace AS {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(854, 549);
+			this->ClientSize = System::Drawing::Size(854, 740);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
@@ -228,5 +234,7 @@ private: System::Void button6_Click(System::Object^  sender, System::EventArgs^ 
 			 Status = 5;
 			 this->Visible = false;
 }
+
+
 };
 }

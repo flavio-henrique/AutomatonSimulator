@@ -96,7 +96,7 @@ namespace AS {
 			this->button4->BackColor = System::Drawing::Color::White;
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold));
-			this->button4->ForeColor = System::Drawing::Color::MediumSeaGreen;
+			this->button4->ForeColor = System::Drawing::Color::Lime;
 			this->button4->Location = System::Drawing::Point(108, 474);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(140, 45);

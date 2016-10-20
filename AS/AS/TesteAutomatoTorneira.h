@@ -101,7 +101,7 @@ namespace AS {
 			this->resultado->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->resultado->BackColor = System::Drawing::Color::Transparent;
 			this->resultado->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"resultado.Image")));
-			this->resultado->Location = System::Drawing::Point(543, 496);
+			this->resultado->Location = System::Drawing::Point(877, 467);
 			this->resultado->Name = L"resultado";
 			this->resultado->Size = System::Drawing::Size(267, 74);
 			this->resultado->TabIndex = 20;
@@ -110,13 +110,12 @@ namespace AS {
 			// novoTeste
 			// 
 			this->novoTeste->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->novoTeste->BackColor = System::Drawing::Color::SpringGreen;
+			this->novoTeste->BackColor = System::Drawing::Color::Lime;
 			this->novoTeste->FlatAppearance->BorderSize = 0;
 			this->novoTeste->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->novoTeste->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->novoTeste->ForeColor = System::Drawing::Color::Black;
-			this->novoTeste->Location = System::Drawing::Point(562, 424);
+			this->novoTeste->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->novoTeste->ForeColor = System::Drawing::Color::White;
+			this->novoTeste->Location = System::Drawing::Point(888, 402);
 			this->novoTeste->Name = L"novoTeste";
 			this->novoTeste->Size = System::Drawing::Size(104, 45);
 			this->novoTeste->TabIndex = 19;
@@ -127,13 +126,12 @@ namespace AS {
 			// proximo
 			// 
 			this->proximo->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->proximo->BackColor = System::Drawing::Color::SpringGreen;
+			this->proximo->BackColor = System::Drawing::Color::Lime;
 			this->proximo->FlatAppearance->BorderSize = 0;
 			this->proximo->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->proximo->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->proximo->ForeColor = System::Drawing::Color::Black;
-			this->proximo->Location = System::Drawing::Point(672, 424);
+			this->proximo->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->proximo->ForeColor = System::Drawing::Color::White;
+			this->proximo->Location = System::Drawing::Point(1036, 402);
 			this->proximo->Name = L"proximo";
 			this->proximo->Size = System::Drawing::Size(99, 45);
 			this->proximo->TabIndex = 18;
@@ -146,7 +144,7 @@ namespace AS {
 			this->boxAutomato->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->boxAutomato->BackColor = System::Drawing::Color::Transparent;
 			this->boxAutomato->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"boxAutomato.Image")));
-			this->boxAutomato->Location = System::Drawing::Point(483, 199);
+			this->boxAutomato->Location = System::Drawing::Point(781, 177);
 			this->boxAutomato->Name = L"boxAutomato";
 			this->boxAutomato->Size = System::Drawing::Size(383, 198);
 			this->boxAutomato->TabIndex = 17;
@@ -155,11 +153,12 @@ namespace AS {
 			// enviar
 			// 
 			this->enviar->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->enviar->BackColor = System::Drawing::Color::SpringGreen;
+			this->enviar->BackColor = System::Drawing::Color::Lime;
 			this->enviar->FlatAppearance->BorderSize = 0;
 			this->enviar->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->enviar->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.25F));
-			this->enviar->Location = System::Drawing::Point(142, 482);
+			this->enviar->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->enviar->ForeColor = System::Drawing::Color::White;
+			this->enviar->Location = System::Drawing::Point(303, 513);
 			this->enviar->Name = L"enviar";
 			this->enviar->Size = System::Drawing::Size(189, 43);
 			this->enviar->TabIndex = 16;
@@ -173,8 +172,8 @@ namespace AS {
 			this->button2->BackColor = System::Drawing::Color::MintCream;
 			this->button2->FlatAppearance->BorderSize = 0;
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.25F));
-			this->button2->Location = System::Drawing::Point(142, 424);
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->button2->Location = System::Drawing::Point(303, 451);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(189, 52);
 			this->button2->TabIndex = 15;
@@ -187,7 +186,7 @@ namespace AS {
 			this->boxImagemPorta->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->boxImagemPorta->BackColor = System::Drawing::Color::Transparent;
 			this->boxImagemPorta->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"boxImagemPorta.Image")));
-			this->boxImagemPorta->Location = System::Drawing::Point(26, 177);
+			this->boxImagemPorta->Location = System::Drawing::Point(187, 177);
 			this->boxImagemPorta->Name = L"boxImagemPorta";
 			this->boxImagemPorta->Size = System::Drawing::Size(438, 251);
 			this->boxImagemPorta->TabIndex = 13;
@@ -201,7 +200,7 @@ namespace AS {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->label1->Location = System::Drawing::Point(245, -62);
+			this->label1->Location = System::Drawing::Point(406, -62);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(481, 39);
 			this->label1->TabIndex = 12;
@@ -214,12 +213,12 @@ namespace AS {
 			this->label2->BackColor = System::Drawing::Color::Transparent;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->label2->Location = System::Drawing::Point(175, 98);
+			this->label2->ForeColor = System::Drawing::Color::Lime;
+			this->label2->Location = System::Drawing::Point(338, 82);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(530, 39);
 			this->label2->TabIndex = 21;
-			this->label2->Text = L"Automato da torneira com sensor";
+			this->label2->Text = L"Autômato da torneira com sensor";
 			// 
 			// button4
 			// 
@@ -227,8 +226,8 @@ namespace AS {
 			this->button4->BackColor = System::Drawing::Color::White;
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold));
-			this->button4->ForeColor = System::Drawing::Color::MediumSeaGreen;
-			this->button4->Location = System::Drawing::Point(74, 496);
+			this->button4->ForeColor = System::Drawing::Color::Lime;
+			this->button4->Location = System::Drawing::Point(87, 458);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(140, 45);
 			this->button4->TabIndex = 22;
@@ -242,7 +241,7 @@ namespace AS {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(896, 598);
+			this->ClientSize = System::Drawing::Size(1218, 598);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->resultado);
@@ -269,14 +268,14 @@ namespace AS {
 				 Automato AF;
 
 				
-				 if (!acionado){
+				 if (acionado){
 					 setImagemTorneira(AF.getDiretorio() + "images/automatoTorneira/torneiraFechadaComMao.png");
-					 acionado = true;
+					 acionado = false;
 				 }
-				 else if (acionado)
+				 else if (!acionado)
 				 {
 					 setImagemTorneira(AF.getDiretorio() + "images/automatoTorneira/torneiraFechadaSemMao.png");
-					 acionado = false;
+					 acionado =true;
 				 }
 				 
 	}

@@ -133,7 +133,10 @@
     <ClCompile Include="Principal.cpp" />
     <ClCompile Include="SobreAs.cpp" />
     <ClCompile Include="SobreAutomato1Form.cpp" />
+    <ClCompile Include="SobreAutomato2Form.cpp" />
+    <ClCompile Include="SobreAutomato3Form.cpp" />
     <ClCompile Include="SobreAutomato4.cpp" />
+    <ClCompile Include="SobreAutomato5Form.cpp" />
     <ClCompile Include="TesteAutomatoForm.cpp" />
     <ClCompile Include="TesteAutomatoPorta.cpp" />
     <ClCompile Include="TesteAutomatoTorneira.cpp" />
@@ -153,7 +156,16 @@
     <ClInclude Include="SobreAutomato1Form.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="SobreAutomato2Form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SobreAutomato3Form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="SobreAutomato4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SobreAutomato5Form.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="TesteAutomatoForm.h">
@@ -186,8 +198,17 @@
     <EmbeddedResource Include="SobreAutomato1Form.resx">
       <DependentUpon>SobreAutomato1Form.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SobreAutomato2Form.resx">
+      <DependentUpon>SobreAutomato2Form.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SobreAutomato3Form.resx">
+      <DependentUpon>SobreAutomato3Form.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SobreAutomato4.resx">
       <DependentUpon>SobreAutomato4.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SobreAutomato5Form.resx">
+      <DependentUpon>SobreAutomato5Form.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TesteAutomatoForm.resx">
       <DependentUpon>TesteAutomatoForm.h</DependentUpon>

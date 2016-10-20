@@ -15,6 +15,10 @@ void Controle::controlarExecucao(void){
 	Automato automato;
 	AS::SobreAutomato1Form sobreAF1;
 	AS::SobreAutomato4 sobreAF4;
+	AS::SobreAutomato2Form sobreAF2;
+	AS::SobreAutomato3Form sobreAF3;
+	AS::SobreAutomato5Form sobreAF5;
+
 
 	bool Resultado;
 
@@ -48,9 +52,9 @@ void Controle::controlarExecucao(void){
 					break;
 				case 2:
 					
-					while (sobreAF1.getStatus() != 0){
-						sobreAF1.ShowDialog();
-						switch (sobreAF1.getStatus()){
+					while (sobreAF2.getStatus() != 0){
+						sobreAF2.ShowDialog();
+						switch (sobreAF2.getStatus()){
 						case 1:
 							AS::TesteAutomatoForm teste2(2);
 							while (teste2.getStatus() != 0){
@@ -61,12 +65,12 @@ void Controle::controlarExecucao(void){
 							break;
 						}
 					}
-					sobreAF1.setStatus(-1);
+					sobreAF2.setStatus(-1);
 					break;
 				case 3:
-					while (sobreAF1.getStatus() != 0){
-						sobreAF1.ShowDialog();
-						switch (sobreAF1.getStatus()){
+					while (sobreAF3.getStatus() != 0){
+						sobreAF3.ShowDialog();
+						switch (sobreAF3.getStatus()){
 						case 1:
 							AS::TesteAutomatoPorta testeAFPorta;
 							while (testeAFPorta.getStatus() != 0){
@@ -77,7 +81,7 @@ void Controle::controlarExecucao(void){
 							break;
 						}
 					}
-					sobreAF1.setStatus(-1);
+					sobreAF3.setStatus(-1);
 					break;
 				case 4:
 
@@ -98,9 +102,9 @@ void Controle::controlarExecucao(void){
 					sobreAF4.setStatus(-1);
 					break;
 				case 5:
-					while (sobreAF1.getStatus() != 0){
-						sobreAF1.ShowDialog();
-						switch (sobreAF1.getStatus()){
+					while (sobreAF5.getStatus() != 0){
+						sobreAF5.ShowDialog();
+						switch (sobreAF5.getStatus()){
 						case 1:
 							AS::TesteAutomatoTorneira testeATorneira;
 							while (testeATorneira.getStatus() != 0){
@@ -111,7 +115,7 @@ void Controle::controlarExecucao(void){
 							break;
 						}
 					}
-					sobreAF1.setStatus(-1);
+					sobreAF5.setStatus(-1);
 					break;
 				}
 			}

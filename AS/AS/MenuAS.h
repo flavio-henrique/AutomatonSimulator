@@ -43,7 +43,7 @@ namespace AS {
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Button^  button1;
-	private: System::Windows::Forms::Button^  button3;
+
 
 
 
@@ -62,7 +62,6 @@ namespace AS {
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -72,7 +71,7 @@ namespace AS {
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(173, 12);
+			this->pictureBox1->Location = System::Drawing::Point(171, 16);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(577, 366);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -87,8 +86,7 @@ namespace AS {
 			this->button2->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Gill Sans MT", 12.25F, System::Drawing::FontStyle::Bold));
-			this->button2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(53)), static_cast<System::Int32>(static_cast<System::Byte>(158)),
-				static_cast<System::Int32>(static_cast<System::Byte>(123)));
+			this->button2->ForeColor = System::Drawing::Color::Lime;
 			this->button2->Location = System::Drawing::Point(330, 442);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(283, 52);
@@ -106,8 +104,7 @@ namespace AS {
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Gill Sans MT", 12.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(53)), static_cast<System::Int32>(static_cast<System::Byte>(158)),
-				static_cast<System::Int32>(static_cast<System::Byte>(123)));
+			this->button1->ForeColor = System::Drawing::Color::Lime;
 			this->button1->Location = System::Drawing::Point(330, 384);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(283, 52);
@@ -116,24 +113,6 @@ namespace AS {
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MenuAS::button1_Click_1);
 			// 
-			// button3
-			// 
-			this->button3->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->button3->BackColor = System::Drawing::Color::Transparent;
-			this->button3->FlatAppearance->MouseDownBackColor = System::Drawing::Color::White;
-			this->button3->FlatAppearance->MouseOverBackColor = System::Drawing::Color::White;
-			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button3->Font = (gcnew System::Drawing::Font(L"Gill Sans MT", 12.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(53)), static_cast<System::Int32>(static_cast<System::Byte>(158)),
-				static_cast<System::Int32>(static_cast<System::Byte>(123)));
-			this->button3->Location = System::Drawing::Point(330, 500);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(283, 52);
-			this->button3->TabIndex = 8;
-			this->button3->Text = L"MANUAL";
-			this->button3->UseVisualStyleBackColor = false;
-			// 
 			// MenuAS
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -141,7 +120,6 @@ namespace AS {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(927, 570);
-			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->pictureBox1);
